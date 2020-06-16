@@ -13,7 +13,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginBottom="29dp"
         android:text="닉네임을 적어주세요"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nickNameText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -22,29 +22,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:text="로그아웃"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="@+id/createNickButton"
+        app:layout_constraintTop_toBottomOf="@+id/createNickButton" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nickNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginTop="163dp"
         android:ems="10"
-        android:hint="닉네임"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/createNickButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginTop="43dp"
         android:text="가입"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/nickNameText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

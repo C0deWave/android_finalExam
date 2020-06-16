@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_login.*
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
@@ -50,7 +51,7 @@ class loginActivity : AppCompatActivity() {
         val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
             //이미 로그인 되어 있다면 패스한다.
-            startActivity(ConfigurationActivity.getLaunchIntent(this))
+            startActivity(MainActivity.getLaunchIntent(this))
             finish()
         }
     }
