@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "432524576766-nec7410fogahp7qtr77prqbjj1liimra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalexam",
+            "certificate_hash": "2f169e08b5dc3b041fc836c64b9ece84f3d66c79"
+          }
+        },
+        {
+          "client_id": "432524576766-5mhok4v3l58b6dascbe2lqtial6c0rku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalexam",
+            "certificate_hash": "252b725d6c6229b422a850bb65a78a49042bd984"
+          }
+        },
+        {
           "client_id": "432524576766-v1mk5u6afh3e5k3vtqgca4ojgod33tj9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

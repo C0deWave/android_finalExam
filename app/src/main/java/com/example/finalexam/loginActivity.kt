@@ -2,6 +2,7 @@ package com.example.finalexam
 
 //페이스북 로그인 연동을 위함이다.
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -24,7 +25,6 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_login.*
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
@@ -59,6 +59,8 @@ class loginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //액션바 숨기
+        supportActionBar?.hide()
         setContentView(R.layout.activity_login)
 
         firebaseAuth = FirebaseAuth.getInstance()
@@ -74,6 +76,14 @@ class loginActivity : AppCompatActivity() {
         facebookLoginButton.setOnClickListener {
             signInFacebook()
         }
+
+        Login_SignUpButton.setOnClickListener {
+            startActivity(Intent(this,SignUpActivity::class.java))
+        }
+
+        Login_loginButton.setOnClickListener {
+            loginEmail()
+        }
     }
 
     // 각종 변수들의 초기화를 담당하는 함수이다.
@@ -86,6 +96,18 @@ class loginActivity : AppCompatActivity() {
 
         //페이스북 로그인 변수 할당
         callbackManager = CallbackManager.Factory.create()
+    }
+
+    //기본 이메일로 로그인을 하는 함수이다.
+    fun loginEmail(){
+        val email = Login_email.text.toString()
+        val password = Login_password.text.toString()
+
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
+            if (task.isSuccessful){
+                startActivity(ConfigurationActivity.getLaunchIntent(this))
+            }
+        }
     }
 
     //구글 로그인을 해주는 함수이다.
@@ -187,8 +209,12 @@ class loginActivity : AppCompatActivity() {
     // 외부에서 로그아웃을 하게 해주는 함수이다.
     // 메인에서 호출하는 것을 볼 수 있다.
     companion object {
-        fun getLaunchIntent(from: Context) = Intent(from, loginActivity::class.java).apply {
+        fun getLaunchIntent(from: MainActivity) = Intent(from, loginActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
         }
+        fun getLaunchIntent(from: ConfigurationActivity) = Intent(from, loginActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        }
+
     }
 }

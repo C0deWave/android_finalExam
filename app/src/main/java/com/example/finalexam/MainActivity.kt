@@ -3,91 +3,57 @@ package com.example.finalexam
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation
+import com.example.finalexam.ui.accountConfigurationFragment
+import com.example.finalexam.ui.calendarFragment
+import com.example.finalexam.ui.noticeBoardFragment
+import com.example.finalexam.ui.predictionFragment
 import com.facebook.login.LoginManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.activity_main2.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     val user = FirebaseAuth.getInstance().currentUser
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        meowBottomNavigation.add(MeowBottomNavigation.Model(1,R.drawable.ic_calendar))
+        meowBottomNavigation.add(MeowBottomNavigation.Model(2,R.drawable.ic_stars))
+        meowBottomNavigation.add(MeowBottomNavigation.Model(3,R.drawable.ic_bulltinboard))
+        meowBottomNavigation.add(MeowBottomNavigation.Model(4,R.drawable.ic_about))
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-
-       // navView.nickNameText.setText("${user?.displayName}")
-
-        var user = FirebaseAuth.getInstance().currentUser
-        Toast.makeText(applicationContext,user?.displayName,Toast.LENGTH_LONG).show()
-//        navView.nickNameText.setText("${user?.displayName.toString()}")
-        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
-            ), drawerLayout
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.action_logout -> {
-                signOut()
-//                Toast.makeText(applicationContext,"설정 클릭!!!",Toast.LENGTH_LONG).show()
-                return true
-            }
-            else -> {
-                return super.onOptionsItemSelected(item)
+        meowBottomNavigation.setOnClickMenuListener {
+            when(it.id){
+                1 -> {setFragment(calendarFragment.newInstance())}
+                2 -> {setFragment(predictionFragment.newInstance())}
+                3 -> {setFragment(noticeBoardFragment.newInstance())}
+                4 -> {setFragment(accountConfigurationFragment.newInstance())}
             }
         }
 
+        //처음 화면을 캘린더로 지정한다.
+        setFragment(calendarFragment.newInstance())
+        meowBottomNavigation.show(1)
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    fun setFragment(fragment : Fragment){
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.mainFrame,fragment,"mainActivity")
+            .commit()
     }
+
 
     // 세션 로그아웃 함수
-    private fun signOut() {
+    fun signOut() {
         lateinit var googleSignInClient: GoogleSignInClient
 
         //세션 로그아웃 구현
@@ -95,17 +61,20 @@ class MainActivity : AppCompatActivity() {
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
+
         //구글 클라이언트를 연결시킵니다.
         googleSignInClient = GoogleSignIn.getClient(this,gso)
-
-        startActivity(loginActivity.getLaunchIntent(this))
         FirebaseAuth.getInstance().signOut();
+
         // 구글 세션 로그 아웃
         googleSignInClient?.signOut()
+
         //페이스북 세션 로그아웃
         LoginManager.getInstance().logOut()
+
+        //초기 화면으로 돌아간다.
         finish()
-//        startActivity(loginActivity.getLaunchIntent(this))
+        startActivity(loginActivity.getLaunchIntent(this))
     }
 
     companion object {
