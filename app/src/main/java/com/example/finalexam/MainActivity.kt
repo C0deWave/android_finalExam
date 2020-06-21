@@ -17,6 +17,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main2.*
 
+
+//수정 연습
 class MainActivity : AppCompatActivity() {
 
     val user = FirebaseAuth.getInstance().currentUser
