@@ -6,7 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.Xml
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.beust.klaxon.Klaxon
 import com.facebook.login.LoginManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -14,6 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONArray
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import java.io.*
@@ -23,8 +28,10 @@ import java.net.*
 class ConfigurationActivity : AppCompatActivity() {
 
     lateinit var googleSignInClient: GoogleSignInClient
+    var arr = arrayListOf<String>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         //액션바 숨기
         supportActionBar?.hide()
@@ -32,7 +39,7 @@ class ConfigurationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //버튼에 로그아웃 기능을 넣는다.
-        signOutButton.setOnClickListener {
+        signOutButton.setOnClickListener{
             signOut()
         }
         //세션 로그아웃 구현
@@ -67,162 +74,92 @@ class ConfigurationActivity : AppCompatActivity() {
                 startActivity(MainActivity.getLaunchIntent(this))
             }
 
+    }
+        //Json파일을 불러온다.
+        val certificationData = readJson()
+        val jsonarr = JSONArray(certificationData)
 
+        // 인덱스 1,2,3,4 순서이다.
+        var certificationList = arrayOf("기술사","기능장","기사","기능사")
+        topSpinner.adapter = ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,certificationList)
+        topSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(applicationContext,"자격증 종류를 선택해 주세요.",Toast.LENGTH_LONG).show()
+            }
 
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Toast.makeText(applicationContext,"${certificationList[position]}를 선택했습니다.",Toast.LENGTH_LONG).show()
+                arr.clear()
+                for (i in 0 .. jsonarr.length() - 1)
+                {
+                    var jsonobj = jsonarr.getJSONObject(i)
+                    if (jsonobj.getString("SERIESNM") == certificationList[position]){
+                        arr.add(jsonobj.getString("JMFLDNM"))
+                    }
+
+                    var adpt = ArrayAdapter<String>(this@ConfigurationActivity,android.R.layout.simple_spinner_dropdown_item,arr)
+                    bottomSpinner.adapter = adpt
+                }
+            }
+
+        }
+
+//        var thread = NetworkThread()
+//        thread.start()
     }
 
-        var thread = NetworkThread()
-        thread.start()
+    fun readJson(): String? {
+        var json : String? = null
+        try {
+            val inputStream : InputStream = assets.open("certification.json")
+            json = inputStream.bufferedReader().use { it.readText() }
+
+        }catch (e : IOException){
+
+        }
+
+        return json
     }
-
-    inner class NetworkThread() : Thread(){
-        override fun run() {
-
-
-            Log.d("Thread","스레드 시작")
-
-            var site = URL( "http://openapi.q-net.or.kr/api/service/rest/InquiryStatSVC/getGradPiPassList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&baseYY=2019&")
-            var conn : HttpURLConnection = site.openConnection() as HttpURLConnection
-            conn.connectTimeout = 30000
-            conn.readTimeout = 30000
-            var input = conn.inputStream
-            var isr = InputStreamReader(input)
-            var br = BufferedReader(isr)
-
-            var str : String? = null
-            var buf = StringBuffer()
-            do {
-                str = br.readLine()
-                println(str)
-
-                if (str != null){
-                    Log.d("Thread","${str}")
-                    buf.append(str)
-                }
-            }while (str != null)
-
-            runOnUiThread {
-                textView5.setText(str)
-            }
-            Log.d("Thread","스레드 종료")
-            println(buf.toString())
-        }
-
-        fun parse(inputStream: InputStream): List<*> {
-            inputStream.use { inputStream ->
-                val parser: XmlPullParser = Xml.newPullParser()
-                parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false)
-                parser.setInput(inputStream, null)
-                parser.nextTag()
-                return readFeed(parser)
-            }
-        }
-
-
-        // We don't use namespaces
-        val ns: String? = null
-
-        @Throws(XmlPullParserException::class, IOException::class)
-        fun readFeed(parser: XmlPullParser): List<Entry> {
-            val entries = mutableListOf<Entry>()
-
-            parser.require(XmlPullParser.START_TAG, ns, "response")
-            while (parser.next() != XmlPullParser.END_TAG) {
-                if (parser.eventType != XmlPullParser.START_TAG) {
-                    continue
-                }
-                // Starts by looking for the entry tag
-                if (parser.name == "items") {
-                    entries.add(readEntry(parser))
-                } else {
-                    skip(parser)
-                }
-            }
-            return entries
-        }
-
-        // Parses the contents of an entry. If it encounters a title, summary, or link tag, hands them off
-        // to their respective "read" methods for processing. Otherwise, skips the tag.
-        @Throws(XmlPullParserException::class, IOException::class)
-        private fun readEntry(parser: XmlPullParser): Entry {
-            parser.require(XmlPullParser.START_TAG, ns, "body")
-            var title: String? = null
-            var summary: String? = null
-            var link: String? = null
-            while (parser.next() != XmlPullParser.END_TAG) {
-                if (parser.eventType != XmlPullParser.START_TAG) {
-                    continue
-                }
-                when (parser.name) {
-                    "items" -> title = readTitle(parser)
-                    "summary" -> summary = readSummary(parser)
-                    "link" -> link = readLink(parser)
-                    else -> skip(parser)
-                }
-            }
-            return Entry(title, summary, link)
-        }
-
-        // Processes title tags in the feed.
-        @Throws(IOException::class, XmlPullParserException::class)
-        private fun readTitle(parser: XmlPullParser): String {
-            parser.require(XmlPullParser.START_TAG, ns, "title")
-            val title = readText(parser)
-            parser.require(XmlPullParser.END_TAG, ns, "title")
-            return title
-        }
-
-        // Processes link tags in the feed.
-        @Throws(IOException::class, XmlPullParserException::class)
-        private fun readLink(parser: XmlPullParser): String {
-            var link = ""
-            parser.require(XmlPullParser.START_TAG, ns, "link")
-            val tag = parser.name
-            val relType = parser.getAttributeValue(null, "rel")
-            if (tag == "link") {
-                if (relType == "alternate") {
-                    link = parser.getAttributeValue(null, "href")
-                    parser.nextTag()
-                }
-            }
-            parser.require(XmlPullParser.END_TAG, ns, "link")
-            return link
-        }
-
-        // Processes summary tags in the feed.
-        @Throws(IOException::class, XmlPullParserException::class)
-        private fun readSummary(parser: XmlPullParser): String {
-            parser.require(XmlPullParser.START_TAG, ns, "summary")
-            val summary = readText(parser)
-            parser.require(XmlPullParser.END_TAG, ns, "summary")
-            return summary
-        }
-
-        // For the tags title and summary, extracts their text values.
-        @Throws(IOException::class, XmlPullParserException::class)
-        private fun readText(parser: XmlPullParser): String {
-            var result = ""
-            if (parser.next() == XmlPullParser.TEXT) {
-                result = parser.text
-                parser.nextTag()
-            }
-            return result
-        }
-
-        @Throws(XmlPullParserException::class, IOException::class)
-        private fun skip(parser: XmlPullParser) {
-            if (parser.eventType != XmlPullParser.START_TAG) {
-                throw IllegalStateException()
-            }
-            var depth = 1
-            while (depth != 0) {
-                when (parser.next()) {
-                    XmlPullParser.END_TAG -> depth--
-                    XmlPullParser.START_TAG -> depth++
-                }
-            }
-        }
-    }
+//
+//    inner class NetworkThread() : Thread() {
+//        override fun run() {
+//
+//
+//            Log.d("Thread", "스레드 시작")
+//
+//            var site =
+//                URL("http://openapi.q-net.or.kr/api/service/rest/InquiryStatSVC/getGradPiPassList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&baseYY=2019&")
+//            var conn: HttpURLConnection = site.openConnection() as HttpURLConnection
+//            conn.connectTimeout = 30000
+//            conn.readTimeout = 30000
+//            var input = conn.inputStream
+//            var isr = InputStreamReader(input)
+//            var br = BufferedReader(isr)
+//
+//            var str: String? = null
+//            var buf = StringBuffer()
+//            do {
+//                str = br.readLine()
+//                println(str)
+//
+//                if (str != null) {
+//                    Log.d("Thread", "${str}")
+//                    buf.append(str)
+//                }
+//            } while (str != null)
+//
+//            runOnUiThread {
+//                textView5.setText(str)
+//            }
+//            Log.d("Thread", "스레드 종료")
+//            println(buf.toString())
+//        }
+//    }
     //-------------네트워크 스레드 종료
 
     // 세션 로그아웃 함수
@@ -243,4 +180,3 @@ class ConfigurationActivity : AppCompatActivity() {
     }
 }
 
-data class Entry(val title: String?, val summary: String?, val link: String?)

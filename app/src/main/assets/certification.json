@@ -1,0 +1,5002 @@
+[
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 752,
+    "JMFLDNM": "가스기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 80,
+    "JMFLDNM": "건설기계기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 740,
+    "JMFLDNM": "건설안전기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 490,
+    "JMFLDNM": "건축구조기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 501,
+    "JMFLDNM": "건축기계설비기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 510,
+    "JMFLDNM": "건축시공기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 502,
+    "JMFLDNM": "건축전기설비기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 511,
+    "JMFLDNM": "건축품질시험기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 760,
+    "JMFLDNM": "공장관리기술사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 71,
+    "JMFLDNM": "공조냉동기계기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 951,
+    "JMFLDNM": "교통기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 144,
+    "MDOBLIGFLDNM": "도시.교통"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 130,
+    "JMFLDNM": "금속가공기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 110,
+    "JMFLDNM": "금속재료기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 94,
+    "JMFLDNM": "금속제련기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 12,
+    "JMFLDNM": "금형기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 872,
+    "JMFLDNM": "기계기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 710,
+    "JMFLDNM": "기계안전기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 891,
+    "JMFLDNM": "기상예보기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 470,
+    "JMFLDNM": "농어업토목기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 950,
+    "JMFLDNM": "농화학기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 920,
+    "JMFLDNM": "대기관리기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 420,
+    "JMFLDNM": "도로및공항기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 650,
+    "JMFLDNM": "도시계획기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 144,
+    "MDOBLIGFLDNM": "도시.교통"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 230,
+    "JMFLDNM": "발송배전기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 802,
+    "JMFLDNM": "비파괴검사기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 801,
+    "JMFLDNM": "산림기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 270,
+    "JMFLDNM": "산업계측제어기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 60,
+    "JMFLDNM": "산업기계설비기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 751,
+    "JMFLDNM": "산업위생관리기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 460,
+    "JMFLDNM": "상하수도기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 551,
+    "JMFLDNM": "섬유기술사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 790,
+    "JMFLDNM": "세라믹기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 750,
+    "JMFLDNM": "소방기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 940,
+    "JMFLDNM": "소음진동기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 701,
+    "JMFLDNM": "수산양식기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 810,
+    "JMFLDNM": "수산제조기술사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 451,
+    "JMFLDNM": "수자원개발기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 930,
+    "JMFLDNM": "수질관리기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 841,
+    "JMFLDNM": "시설원예기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 800,
+    "JMFLDNM": "식품기술사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 702,
+    "JMFLDNM": "어로기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 11,
+    "JMFLDNM": "용접기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 561,
+    "JMFLDNM": "의류기술사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 875,
+    "JMFLDNM": "인간공학기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 938,
+    "JMFLDNM": "자연환경관리기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 730,
+    "JMFLDNM": "전기안전기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 250,
+    "JMFLDNM": "전기응용기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 432,
+    "JMFLDNM": "전기철도기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 301,
+    "JMFLDNM": "전자응용기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 601,
+    "JMFLDNM": "정보관리기술사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 960,
+    "JMFLDNM": "제품디자인기술사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 670,
+    "JMFLDNM": "조경기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 143,
+    "MDOBLIGFLDNM": "조경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 320,
+    "JMFLDNM": "조선기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 840,
+    "JMFLDNM": "종자기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 690,
+    "JMFLDNM": "지적기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 825,
+    "JMFLDNM": "지질및지반기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 50,
+    "JMFLDNM": "차량기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 430,
+    "JMFLDNM": "철도기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 261,
+    "JMFLDNM": "철도신호기술사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 431,
+    "JMFLDNM": "철도차량기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 851,
+    "JMFLDNM": "축산기술사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 242,
+    "MDOBLIGFLDNM": "축산"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 680,
+    "JMFLDNM": "측량및지형공간정보기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 622,
+    "JMFLDNM": "컴퓨터시스템응용기술사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 400,
+    "JMFLDNM": "토목구조기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 480,
+    "JMFLDNM": "토목시공기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 481,
+    "JMFLDNM": "토목품질시험기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 948,
+    "JMFLDNM": "토양환경기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 390,
+    "JMFLDNM": "토질및기초기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 970,
+    "JMFLDNM": "폐기물처리기술사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 780,
+    "JMFLDNM": "포장기술사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 120,
+    "JMFLDNM": "표면처리기술사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 770,
+    "JMFLDNM": "품질관리기술사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 370,
+    "JMFLDNM": "항공기관기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 360,
+    "JMFLDNM": "항공기체기술사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 410,
+    "JMFLDNM": "항만및해안기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 700,
+    "JMFLDNM": "해양기술사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 210,
+    "JMFLDNM": "화공기술사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 720,
+    "JMFLDNM": "화공안전기술사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 1,
+    "SERIESNM": "기술사",
+    "JMCD": 591,
+    "JMFLDNM": "화약류관리기술사",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3375,
+    "JMFLDNM": "가스기능장",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3120,
+    "JMFLDNM": "건설기계정비기능장",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3611,
+    "JMFLDNM": "건축목재시공기능장",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3621,
+    "JMFLDNM": "건축일반시공기능장",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3770,
+    "JMFLDNM": "귀금속가공기능장",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3221,
+    "JMFLDNM": "금속재료기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3061,
+    "JMFLDNM": "금형제작기능장",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3021,
+    "JMFLDNM": "기계가공기능장",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3924,
+    "JMFLDNM": "미용장",
+    "OBLIGFLDCD": 12,
+    "OBLIGFLDNM": "이용.숙박.여행.오락.스포츠",
+    "MDOBLIGFLDCD": 121,
+    "MDOBLIGFLDNM": "이용.미용"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3081,
+    "JMFLDNM": "배관기능장",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 145,
+    "MDOBLIGFLDNM": "건설배관"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3270,
+    "JMFLDNM": "압연기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3170,
+    "JMFLDNM": "에너지관리기능장",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3100,
+    "JMFLDNM": "용접기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3360,
+    "JMFLDNM": "위험물기능장",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 182,
+    "MDOBLIGFLDNM": "위험물"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3925,
+    "JMFLDNM": "이용장",
+    "OBLIGFLDCD": 12,
+    "OBLIGFLDNM": "이용.숙박.여행.오락.스포츠",
+    "MDOBLIGFLDCD": 121,
+    "MDOBLIGFLDNM": "이용.미용"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3110,
+    "JMFLDNM": "자동차정비기능장",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3911,
+    "JMFLDNM": "잠수기능장",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3380,
+    "JMFLDNM": "전기기능장",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3410,
+    "JMFLDNM": "전자기기기능장",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3240,
+    "JMFLDNM": "제강기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3923,
+    "JMFLDNM": "제과기능장",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 222,
+    "MDOBLIGFLDNM": "제과.제빵"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3230,
+    "JMFLDNM": "제선기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3922,
+    "JMFLDNM": "조리기능장",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3200,
+    "JMFLDNM": "주조기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 173,
+    "MDOBLIGFLDNM": "단조.주조"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3150,
+    "JMFLDNM": "철도차량정비기능장",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3095,
+    "JMFLDNM": "판금제관기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 172,
+    "MDOBLIGFLDNM": "판금.제관.새시"
+  },
+  {
+    "SERIESCD": 2,
+    "SERIESNM": "기능장",
+    "JMCD": 3210,
+    "JMFLDNM": "표면처리기능장",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2177,
+    "JMFLDNM": "3D프린터개발산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2142,
+    "JMFLDNM": "가구제작산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1471,
+    "JMFLDNM": "가스기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2471,
+    "JMFLDNM": "가스산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2044,
+    "JMFLDNM": "객화차정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1040,
+    "JMFLDNM": "건설기계설비기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2040,
+    "JMFLDNM": "건설기계설비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1050,
+    "JMFLDNM": "건설기계정비기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2050,
+    "JMFLDNM": "건설기계정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1440,
+    "JMFLDNM": "건설안전기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2390,
+    "JMFLDNM": "건설안전산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1750,
+    "JMFLDNM": "건설재료시험기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2600,
+    "JMFLDNM": "건설재료시험산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1630,
+    "JMFLDNM": "건축기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2253,
+    "JMFLDNM": "건축목공산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2530,
+    "JMFLDNM": "건축산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1632,
+    "JMFLDNM": "건축설비기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2531,
+    "JMFLDNM": "건축설비산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2251,
+    "JMFLDNM": "건축일반시공산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1730,
+    "JMFLDNM": "공조냉동기계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2590,
+    "JMFLDNM": "공조냉동기계산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2108,
+    "JMFLDNM": "광학기기산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1513,
+    "JMFLDNM": "광학기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1751,
+    "JMFLDNM": "교통기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 144,
+    "MDOBLIGFLDNM": "도시.교통"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2751,
+    "JMFLDNM": "교통산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 144,
+    "MDOBLIGFLDNM": "도시.교통"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9105,
+    "JMFLDNM": "국제의료관광코디네이터",
+    "OBLIGFLDCD": 6,
+    "OBLIGFLDNM": "보건.의료",
+    "MDOBLIGFLDCD": 61,
+    "MDOBLIGFLDNM": "보건.의료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1051,
+    "JMFLDNM": "궤도장비정비기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2051,
+    "JMFLDNM": "궤도장비정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2760,
+    "JMFLDNM": "귀금속가공산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1027,
+    "JMFLDNM": "그린전동자동차기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1104,
+    "JMFLDNM": "금속재료기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2101,
+    "JMFLDNM": "금속재료산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1080,
+    "JMFLDNM": "기계설계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2031,
+    "JMFLDNM": "기계설계산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2035,
+    "JMFLDNM": "기계정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2011,
+    "JMFLDNM": "기계조립산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1601,
+    "JMFLDNM": "기상감정기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1600,
+    "JMFLDNM": "기상기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1582,
+    "JMFLDNM": "농림토양평가관리기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2582,
+    "JMFLDNM": "농림토양평가관리산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1023,
+    "JMFLDNM": "농업기계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2027,
+    "JMFLDNM": "농업기계산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1442,
+    "JMFLDNM": "농작업안전보건기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1617,
+    "JMFLDNM": "누설비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1661,
+    "JMFLDNM": "대기환경기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2571,
+    "JMFLDNM": "대기환경산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1350,
+    "JMFLDNM": "도시계획기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 144,
+    "MDOBLIGFLDNM": "도시.교통"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1177,
+    "JMFLDNM": "로봇기구개발기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1178,
+    "JMFLDNM": "로봇소프트웨어개발기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1179,
+    "JMFLDNM": "로봇하드웨어개발기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9545,
+    "JMFLDNM": "멀티미디어콘텐츠제작전문가",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1060,
+    "JMFLDNM": "메카트로닉스기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2060,
+    "JMFLDNM": "메카트로닉스산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2570,
+    "JMFLDNM": "바이오화학제품제조산업기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1175,
+    "JMFLDNM": "반도체설계기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2175,
+    "JMFLDNM": "반도체설계산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1611,
+    "JMFLDNM": "방사선비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2611,
+    "JMFLDNM": "방사선비파괴검사산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2630,
+    "JMFLDNM": "방수산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1443,
+    "JMFLDNM": "방재기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2041,
+    "JMFLDNM": "배관산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 145,
+    "MDOBLIGFLDNM": "건설배관"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1641,
+    "JMFLDNM": "버섯산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2980,
+    "JMFLDNM": "보석감정산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2880,
+    "JMFLDNM": "보석디자인산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2975,
+    "JMFLDNM": "복어조리산업기사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2193,
+    "JMFLDNM": "사무자동화산업기사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2028,
+    "JMFLDNM": "사출금형산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1024,
+    "JMFLDNM": "사출금형설계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9520,
+    "JMFLDNM": "사회조사분석사1급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9521,
+    "JMFLDNM": "사회조사분석사2급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1564,
+    "JMFLDNM": "산림기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2481,
+    "JMFLDNM": "산림산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1431,
+    "JMFLDNM": "산업안전기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2381,
+    "JMFLDNM": "산업안전산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1472,
+    "JMFLDNM": "산업위생관리기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2472,
+    "JMFLDNM": "산업위생관리산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1800,
+    "JMFLDNM": "생물공학기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1989,
+    "JMFLDNM": "생물분류기사(동물)",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1988,
+    "JMFLDNM": "생물분류기사(식물)",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2034,
+    "JMFLDNM": "생산자동화산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1837,
+    "JMFLDNM": "설비보전기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1297,
+    "JMFLDNM": "섬유기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2264,
+    "JMFLDNM": "섬유디자인산업기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2277,
+    "JMFLDNM": "섬유산업기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1900,
+    "JMFLDNM": "소방설비기사(기계분야)",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1910,
+    "JMFLDNM": "소방설비기사(전기분야)",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2900,
+    "JMFLDNM": "소방설비산업기사(기계분야)",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2910,
+    "JMFLDNM": "소방설비산업기사(전기분야)",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9537,
+    "JMFLDNM": "소비자전문상담사1급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9538,
+    "JMFLDNM": "소비자전문상담사2급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1663,
+    "JMFLDNM": "소음진동기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2573,
+    "JMFLDNM": "소음진동산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1625,
+    "JMFLDNM": "수산양식기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2520,
+    "JMFLDNM": "수산양식산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1540,
+    "JMFLDNM": "수산제조기사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1662,
+    "JMFLDNM": "수질환경기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2572,
+    "JMFLDNM": "수질환경산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9546,
+    "JMFLDNM": "스포츠경영관리사",
+    "OBLIGFLDCD": 12,
+    "OBLIGFLDNM": "이용.숙박.여행.오락.스포츠",
+    "MDOBLIGFLDCD": 122,
+    "MDOBLIGFLDNM": "숙박.여행.오락.스포츠"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1555,
+    "JMFLDNM": "승강기기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2395,
+    "JMFLDNM": "승강기산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1790,
+    "JMFLDNM": "시각디자인기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2434,
+    "JMFLDNM": "시각디자인산업기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1780,
+    "JMFLDNM": "시설원예기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1562,
+    "JMFLDNM": "식물보호기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2562,
+    "JMFLDNM": "식물보호산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1541,
+    "JMFLDNM": "식육가공기사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1530,
+    "JMFLDNM": "식품기사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2450,
+    "JMFLDNM": "식품산업기사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1114,
+    "JMFLDNM": "신재생에너지발전설비기사(태양광)",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2114,
+    "JMFLDNM": "신재생에너지발전설비산업기사(태양광)",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1282,
+    "JMFLDNM": "실내건축기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2282,
+    "JMFLDNM": "실내건축산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2972,
+    "JMFLDNM": "양식조리산업기사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2631,
+    "JMFLDNM": "어로산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1626,
+    "JMFLDNM": "어병기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1633,
+    "JMFLDNM": "어업생산관리기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1340,
+    "JMFLDNM": "에너지관리기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2960,
+    "JMFLDNM": "에너지관리산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1028,
+    "JMFLDNM": "온실가스관리기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2037,
+    "JMFLDNM": "온실가스관리산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1615,
+    "JMFLDNM": "와전류비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1022,
+    "JMFLDNM": "용접기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2026,
+    "JMFLDNM": "용접산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2121,
+    "JMFLDNM": "위험물산업기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 182,
+    "MDOBLIGFLDNM": "위험물"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1592,
+    "JMFLDNM": "유기농업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2592,
+    "JMFLDNM": "유기농업산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1550,
+    "JMFLDNM": "응용지질기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1176,
+    "JMFLDNM": "의공기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2176,
+    "JMFLDNM": "의공산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1301,
+    "JMFLDNM": "의류기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1875,
+    "JMFLDNM": "인간공학기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1391,
+    "JMFLDNM": "인쇄기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2391,
+    "JMFLDNM": "인쇄산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1021,
+    "JMFLDNM": "일반기계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2973,
+    "JMFLDNM": "일식조리산업기사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1121,
+    "JMFLDNM": "임베디드기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1590,
+    "JMFLDNM": "임산가공기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2500,
+    "JMFLDNM": "임산가공산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9539,
+    "JMFLDNM": "임상심리사1급",
+    "OBLIGFLDCD": 6,
+    "OBLIGFLDNM": "보건.의료",
+    "MDOBLIGFLDCD": 61,
+    "MDOBLIGFLDNM": "보건.의료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9540,
+    "JMFLDNM": "임상심리사2급",
+    "OBLIGFLDCD": 6,
+    "OBLIGFLDNM": "보건.의료",
+    "MDOBLIGFLDCD": 61,
+    "MDOBLIGFLDNM": "보건.의료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1570,
+    "JMFLDNM": "임업종묘기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1613,
+    "JMFLDNM": "자기비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2613,
+    "JMFLDNM": "자기비파괴검사산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1070,
+    "JMFLDNM": "자동차정비기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2070,
+    "JMFLDNM": "자동차정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1938,
+    "JMFLDNM": "자연생태복원기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2938,
+    "JMFLDNM": "자연생태복원산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2521,
+    "JMFLDNM": "잠수산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2107,
+    "JMFLDNM": "재료조직평가산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1160,
+    "JMFLDNM": "전기공사기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2150,
+    "JMFLDNM": "전기공사산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2151,
+    "JMFLDNM": "전기기기산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1150,
+    "JMFLDNM": "전기기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2140,
+    "JMFLDNM": "전기산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1741,
+    "JMFLDNM": "전기철도기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2036,
+    "JMFLDNM": "전기철도산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1321,
+    "JMFLDNM": "전자계산기기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2324,
+    "JMFLDNM": "전자계산기제어산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1322,
+    "JMFLDNM": "전자계산기조직응용기사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1170,
+    "JMFLDNM": "전자기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2835,
+    "JMFLDNM": "전자부품장착산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2170,
+    "JMFLDNM": "전자산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2172,
+    "JMFLDNM": "전자회로설계산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2104,
+    "JMFLDNM": "정밀측정산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1320,
+    "JMFLDNM": "정보처리기사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2290,
+    "JMFLDNM": "정보처리산업기사",
+    "OBLIGFLDCD": 21,
+    "OBLIGFLDNM": "정보통신",
+    "MDOBLIGFLDCD": 211,
+    "MDOBLIGFLDNM": "정보기술"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1810,
+    "JMFLDNM": "제판기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1512,
+    "JMFLDNM": "제품디자인기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2432,
+    "JMFLDNM": "제품디자인산업기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1370,
+    "JMFLDNM": "조경기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 143,
+    "MDOBLIGFLDNM": "조경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2320,
+    "JMFLDNM": "조경산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 143,
+    "MDOBLIGFLDNM": "조경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1220,
+    "JMFLDNM": "조선기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2220,
+    "JMFLDNM": "조선산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1560,
+    "JMFLDNM": "종자기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2470,
+    "JMFLDNM": "종자산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2105,
+    "JMFLDNM": "주조산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 173,
+    "MDOBLIGFLDNM": "단조.주조"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2974,
+    "JMFLDNM": "중식조리산업기사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1390,
+    "JMFLDNM": "지적기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2340,
+    "JMFLDNM": "지적산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9510,
+    "JMFLDNM": "직업상담사1급",
+    "OBLIGFLDCD": 7,
+    "OBLIGFLDNM": "사회복지.종교",
+    "MDOBLIGFLDCD": 71,
+    "MDOBLIGFLDNM": "사회복지.종교"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9511,
+    "JMFLDNM": "직업상담사2급",
+    "OBLIGFLDCD": 7,
+    "OBLIGFLDNM": "사회복지.종교",
+    "MDOBLIGFLDCD": 71,
+    "MDOBLIGFLDNM": "사회복지.종교"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2042,
+    "JMFLDNM": "철도동력차기관정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2043,
+    "JMFLDNM": "철도동력차전기정비산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1740,
+    "JMFLDNM": "철도신호기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2160,
+    "JMFLDNM": "철도신호산업기사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2045,
+    "JMFLDNM": "철도운송산업기사",
+    "OBLIGFLDCD": 9,
+    "OBLIGFLDNM": "운전.운송",
+    "MDOBLIGFLDCD": 91,
+    "MDOBLIGFLDNM": "운전.운송"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1030,
+    "JMFLDNM": "철도차량기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2030,
+    "JMFLDNM": "철도차량산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1760,
+    "JMFLDNM": "철도토목기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2610,
+    "JMFLDNM": "철도토목산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1612,
+    "JMFLDNM": "초음파비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2612,
+    "JMFLDNM": "초음파비파괴검사산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1581,
+    "JMFLDNM": "축산기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 242,
+    "MDOBLIGFLDNM": "축산"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2491,
+    "JMFLDNM": "축산산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 242,
+    "MDOBLIGFLDNM": "축산"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1380,
+    "JMFLDNM": "측량및지형공간정보기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2330,
+    "JMFLDNM": "측량및지형공간정보산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2090,
+    "JMFLDNM": "치공구설계산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1614,
+    "JMFLDNM": "침투비파괴검사기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2614,
+    "JMFLDNM": "침투비파괴검사산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9535,
+    "JMFLDNM": "컨벤션기획사1급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9536,
+    "JMFLDNM": "컨벤션기획사2급",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 21,
+    "MDOBLIGFLDNM": "경영"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1982,
+    "JMFLDNM": "컬러리스트기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2982,
+    "JMFLDNM": "컬러리스트산업기사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2025,
+    "JMFLDNM": "컴퓨터응용가공산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1048,
+    "JMFLDNM": "콘크리트기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2048,
+    "JMFLDNM": "콘크리트산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 9541,
+    "JMFLDNM": "텔레마케팅관리사",
+    "OBLIGFLDCD": 10,
+    "OBLIGFLDNM": "영업.판매",
+    "MDOBLIGFLDCD": 101,
+    "MDOBLIGFLDNM": "영업.판매"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1250,
+    "JMFLDNM": "토목기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2240,
+    "JMFLDNM": "토목산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1948,
+    "JMFLDNM": "토양환경기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2012,
+    "JMFLDNM": "판금제관산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 172,
+    "MDOBLIGFLDNM": "판금.제관.새시"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2301,
+    "JMFLDNM": "패션디자인산업기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2085,
+    "JMFLDNM": "패션머천다이징산업기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1950,
+    "JMFLDNM": "폐기물처리기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2950,
+    "JMFLDNM": "폐기물처리산업기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1511,
+    "JMFLDNM": "포장기사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2431,
+    "JMFLDNM": "포장산업기사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2106,
+    "JMFLDNM": "표면처리산업기사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1500,
+    "JMFLDNM": "품질경영기사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2420,
+    "JMFLDNM": "품질경영산업기사",
+    "OBLIGFLDCD": 2,
+    "OBLIGFLDNM": "경영.회계.사무",
+    "MDOBLIGFLDCD": 24,
+    "MDOBLIGFLDNM": "생산관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2029,
+    "JMFLDNM": "프레스금형산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1025,
+    "JMFLDNM": "프레스금형설계기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2551,
+    "JMFLDNM": "피아노조율산업기사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2268,
+    "JMFLDNM": "한복산업기사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2971,
+    "JMFLDNM": "한식조리산업기사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1240,
+    "JMFLDNM": "항공기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2230,
+    "JMFLDNM": "항공산업기사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1351,
+    "JMFLDNM": "항로표지기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2351,
+    "JMFLDNM": "항로표지산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1403,
+    "JMFLDNM": "해양공학기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1402,
+    "JMFLDNM": "해양자원개발기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2350,
+    "JMFLDNM": "해양조사산업기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1401,
+    "JMFLDNM": "해양환경기사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1110,
+    "JMFLDNM": "화공기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1140,
+    "JMFLDNM": "화약류관리기사",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2130,
+    "JMFLDNM": "화약류관리산업기사",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1130,
+    "JMFLDNM": "화약류제조기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2120,
+    "JMFLDNM": "화약류제조산업기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1441,
+    "JMFLDNM": "화재감식평가기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2441,
+    "JMFLDNM": "화재감식평가산업기사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1563,
+    "JMFLDNM": "화학분석기사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1576,
+    "JMFLDNM": "화훼장식기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 2625,
+    "JMFLDNM": "화훼장식산업기사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 3,
+    "SERIESNM": "기사",
+    "JMCD": 1029,
+    "JMFLDNM": "환경위해관리기사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7785,
+    "JMFLDNM": "3D프린터운용기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7140,
+    "JMFLDNM": "가구제작기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6335,
+    "JMFLDNM": "가스기능사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 251,
+    "MDOBLIGFLDNM": "안전관리"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7170,
+    "JMFLDNM": "거푸집기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6298,
+    "JMFLDNM": "건설기계정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7132,
+    "JMFLDNM": "건설재료시험기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7150,
+    "JMFLDNM": "건축도장기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7130,
+    "JMFLDNM": "건축목공기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 8070,
+    "JMFLDNM": "공구제작기능사보",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6251,
+    "JMFLDNM": "공유압기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6320,
+    "JMFLDNM": "공조냉동기계기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7888,
+    "JMFLDNM": "광고도장기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7385,
+    "JMFLDNM": "광산보안기능사(화약분야)",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7371,
+    "JMFLDNM": "광산차량기계운전기능사",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7372,
+    "JMFLDNM": "광산환경기능사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7671,
+    "JMFLDNM": "광학기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6051,
+    "JMFLDNM": "궤도장비정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7460,
+    "JMFLDNM": "귀금속가공기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7450,
+    "JMFLDNM": "금속도장기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6490,
+    "JMFLDNM": "금속재료시험기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7102,
+    "JMFLDNM": "금속재창호기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 172,
+    "MDOBLIGFLDNM": "판금.제관.새시"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6105,
+    "JMFLDNM": "금형기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6042,
+    "JMFLDNM": "기계가공조립기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7121,
+    "JMFLDNM": "기계정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7861,
+    "JMFLDNM": "기중기운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6301,
+    "JMFLDNM": "농기계운전기능사",
+    "OBLIGFLDCD": 9,
+    "OBLIGFLDNM": "운전.운송",
+    "MDOBLIGFLDCD": 91,
+    "MDOBLIGFLDNM": "운전.운송"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6300,
+    "JMFLDNM": "농기계정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7180,
+    "JMFLDNM": "도배기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7890,
+    "JMFLDNM": "도자공예기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7660,
+    "JMFLDNM": "도화기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6960,
+    "JMFLDNM": "동력기계정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7992,
+    "JMFLDNM": "떡제조기능사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 222,
+    "MDOBLIGFLDNM": "제과.제빵"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7866,
+    "JMFLDNM": "로더운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7871,
+    "JMFLDNM": "롤러운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6903,
+    "JMFLDNM": "메카트로닉스기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7872,
+    "JMFLDNM": "모터그레이더운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7480,
+    "JMFLDNM": "목공예기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7101,
+    "JMFLDNM": "목재창호기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7643,
+    "JMFLDNM": "목질재료기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7110,
+    "JMFLDNM": "미장기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6033,
+    "JMFLDNM": "반도체장비유지보수기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7471,
+    "JMFLDNM": "방사선비파괴검사기능사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7030,
+    "JMFLDNM": "방수기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6213,
+    "JMFLDNM": "배관기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 145,
+    "MDOBLIGFLDNM": "건설배관"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7631,
+    "JMFLDNM": "버섯종균기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7889,
+    "JMFLDNM": "보석가공기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7980,
+    "JMFLDNM": "보석감정사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7914,
+    "JMFLDNM": "복어조리기능사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7863,
+    "JMFLDNM": "불도저운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7120,
+    "JMFLDNM": "비계기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7795,
+    "JMFLDNM": "사진기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 8090,
+    "JMFLDNM": "사출금형기능사보",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7632,
+    "JMFLDNM": "산림기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6415,
+    "JMFLDNM": "생산자동화기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6990,
+    "JMFLDNM": "석공기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6792,
+    "JMFLDNM": "석공예기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6920,
+    "JMFLDNM": "선체건조기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6837,
+    "JMFLDNM": "설비보전기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7960,
+    "JMFLDNM": "세탁기능사",
+    "OBLIGFLDCD": 11,
+    "OBLIGFLDNM": "경비.청소",
+    "MDOBLIGFLDCD": 111,
+    "MDOBLIGFLDNM": "경비.청소"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7700,
+    "JMFLDNM": "수산양식기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 244,
+    "MDOBLIGFLDNM": "어업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7940,
+    "JMFLDNM": "승강기기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7482,
+    "JMFLDNM": "식육처리기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 242,
+    "MDOBLIGFLDNM": "축산"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7591,
+    "JMFLDNM": "식품가공기능사",
+    "OBLIGFLDCD": 22,
+    "OBLIGFLDNM": "식품.가공",
+    "MDOBLIGFLDCD": 221,
+    "MDOBLIGFLDNM": "식품"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7904,
+    "JMFLDNM": "신발류제조기능사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7114,
+    "JMFLDNM": "신재생에너지발전설비기능사(태양광)",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7152,
+    "JMFLDNM": "실내건축기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7873,
+    "JMFLDNM": "아스팔트피니셔운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6543,
+    "JMFLDNM": "압연기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7931,
+    "JMFLDNM": "양복기능사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7932,
+    "JMFLDNM": "양장기능사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7930,
+    "JMFLDNM": "양화장치운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7761,
+    "JMFLDNM": "에너지관리기능사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 262,
+    "MDOBLIGFLDNM": "에너지.기상"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6040,
+    "JMFLDNM": "연삭기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6420,
+    "JMFLDNM": "열처리기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7302,
+    "JMFLDNM": "염색기능사(날염)",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7301,
+    "JMFLDNM": "염색기능사(침염)",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 191,
+    "MDOBLIGFLDNM": "섬유"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7161,
+    "JMFLDNM": "온수온돌기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6223,
+    "JMFLDNM": "용접기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7901,
+    "JMFLDNM": "원예기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6530,
+    "JMFLDNM": "원형기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 173,
+    "MDOBLIGFLDNM": "단조.주조"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7798,
+    "JMFLDNM": "웹디자인기능사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6697,
+    "JMFLDNM": "위험물기능사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 182,
+    "MDOBLIGFLDNM": "위험물"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6592,
+    "JMFLDNM": "유기농업기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7151,
+    "JMFLDNM": "유리시공기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6176,
+    "JMFLDNM": "의료전자기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7908,
+    "JMFLDNM": "이용사",
+    "OBLIGFLDCD": 12,
+    "OBLIGFLDNM": "이용.숙박.여행.오락.스포츠",
+    "MDOBLIGFLDCD": 121,
+    "MDOBLIGFLDNM": "이용.미용"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7524,
+    "JMFLDNM": "인쇄기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7644,
+    "JMFLDNM": "임산가공기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7630,
+    "JMFLDNM": "임업종묘기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 243,
+    "MDOBLIGFLDNM": "임업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7473,
+    "JMFLDNM": "자기비파괴검사기능사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6836,
+    "JMFLDNM": "자동차보수도장기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6281,
+    "JMFLDNM": "자동차정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6285,
+    "JMFLDNM": "자동차차체수리기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 166,
+    "MDOBLIGFLDNM": "자동차"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7612,
+    "JMFLDNM": "잠수기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7780,
+    "JMFLDNM": "전기기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7061,
+    "JMFLDNM": "전산응용건축제도기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6151,
+    "JMFLDNM": "전산응용기계제도기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6910,
+    "JMFLDNM": "전산응용조선제도기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 164,
+    "MDOBLIGFLDNM": "조선"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7072,
+    "JMFLDNM": "전산응용토목제도기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6801,
+    "JMFLDNM": "전자계산기기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6790,
+    "JMFLDNM": "전자기기기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6835,
+    "JMFLDNM": "전자부품장착기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 162,
+    "MDOBLIGFLDNM": "기계장비설비.설치"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6791,
+    "JMFLDNM": "전자출판기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 231,
+    "MDOBLIGFLDNM": "인쇄.사진"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6785,
+    "JMFLDNM": "전자캐드기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 202,
+    "MDOBLIGFLDNM": "전자"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6120,
+    "JMFLDNM": "정밀측정기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6515,
+    "JMFLDNM": "제강기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6500,
+    "JMFLDNM": "제선기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6793,
+    "JMFLDNM": "제품응용모델링기능사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7900,
+    "JMFLDNM": "조경기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 143,
+    "MDOBLIGFLDNM": "조경"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7070,
+    "JMFLDNM": "조적기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7916,
+    "JMFLDNM": "조주기능사",
+    "OBLIGFLDCD": 13,
+    "OBLIGFLDNM": "음식서비스",
+    "MDOBLIGFLDCD": 131,
+    "MDOBLIGFLDNM": "조리"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7620,
+    "JMFLDNM": "종자기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6461,
+    "JMFLDNM": "주조기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 173,
+    "MDOBLIGFLDNM": "단조.주조"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7680,
+    "JMFLDNM": "지도제작기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7650,
+    "JMFLDNM": "지적기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7483,
+    "JMFLDNM": "천공기운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7864,
+    "JMFLDNM": "천장크레인운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7080,
+    "JMFLDNM": "철근기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6772,
+    "JMFLDNM": "철도전기신호기능사",
+    "OBLIGFLDCD": 20,
+    "OBLIGFLDNM": "전기.전자",
+    "MDOBLIGFLDCD": 201,
+    "MDOBLIGFLDNM": "전기"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6352,
+    "JMFLDNM": "철도차량정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 163,
+    "MDOBLIGFLDNM": "철도"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7010,
+    "JMFLDNM": "철도토목기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7472,
+    "JMFLDNM": "초음파비파괴검사기능사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6381,
+    "JMFLDNM": "축로기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 171,
+    "MDOBLIGFLDNM": "금속.재료"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7481,
+    "JMFLDNM": "축산기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 242,
+    "MDOBLIGFLDNM": "축산"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6980,
+    "JMFLDNM": "측량기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7474,
+    "JMFLDNM": "침투비파괴검사기능사",
+    "OBLIGFLDCD": 25,
+    "OBLIGFLDNM": "안전관리",
+    "MDOBLIGFLDCD": 252,
+    "MDOBLIGFLDNM": "비파괴검사"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7835,
+    "JMFLDNM": "컨테이너크레인운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7796,
+    "JMFLDNM": "컴퓨터그래픽스운용기능사",
+    "OBLIGFLDCD": 8,
+    "OBLIGFLDNM": "문화.예술.디자인.방송",
+    "MDOBLIGFLDCD": 82,
+    "MDOBLIGFLDNM": "디자인"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6032,
+    "JMFLDNM": "컴퓨터응용밀링기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6012,
+    "JMFLDNM": "컴퓨터응용선반기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 161,
+    "MDOBLIGFLDNM": "기계제작"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7020,
+    "JMFLDNM": "콘크리트기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7834,
+    "JMFLDNM": "타워크레인운전기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 146,
+    "MDOBLIGFLDNM": "건설기계운전"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7210,
+    "JMFLDNM": "타일기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 141,
+    "MDOBLIGFLDNM": "건축"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6222,
+    "JMFLDNM": "특수용접기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 174,
+    "MDOBLIGFLDNM": "용접"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6175,
+    "JMFLDNM": "판금제관기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 172,
+    "MDOBLIGFLDNM": "판금.제관.새시"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6480,
+    "JMFLDNM": "표면처리기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 175,
+    "MDOBLIGFLDNM": "도장.도금"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 8080,
+    "JMFLDNM": "프레스금형기능사보",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 167,
+    "MDOBLIGFLDNM": "금형.공작기계"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7103,
+    "JMFLDNM": "플라스틱창호기능사",
+    "OBLIGFLDCD": 17,
+    "OBLIGFLDNM": "재료",
+    "MDOBLIGFLDCD": 172,
+    "MDOBLIGFLDNM": "판금.제관.새시"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7917,
+    "JMFLDNM": "피아노조율기능사",
+    "OBLIGFLDCD": 23,
+    "OBLIGFLDNM": "인쇄.목재.가구.공예",
+    "MDOBLIGFLDCD": 232,
+    "MDOBLIGFLDNM": "목재.가구.공예"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7723,
+    "JMFLDNM": "한복기능사",
+    "OBLIGFLDCD": 19,
+    "OBLIGFLDNM": "섬유.의복",
+    "MDOBLIGFLDCD": 192,
+    "MDOBLIGFLDNM": "의복"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6292,
+    "JMFLDNM": "항공기관정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6291,
+    "JMFLDNM": "항공기체정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7670,
+    "JMFLDNM": "항공사진기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6293,
+    "JMFLDNM": "항공장비정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6294,
+    "JMFLDNM": "항공전자정비기능사",
+    "OBLIGFLDCD": 16,
+    "OBLIGFLDNM": "기계",
+    "MDOBLIGFLDCD": 165,
+    "MDOBLIGFLDNM": "항공"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6351,
+    "JMFLDNM": "항로표지기능사",
+    "OBLIGFLDCD": 14,
+    "OBLIGFLDNM": "건설",
+    "MDOBLIGFLDCD": 142,
+    "MDOBLIGFLDNM": "토목"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7970,
+    "JMFLDNM": "화약취급기능사",
+    "OBLIGFLDCD": 15,
+    "OBLIGFLDNM": "광업자원",
+    "MDOBLIGFLDCD": 151,
+    "MDOBLIGFLDNM": "채광"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 6560,
+    "JMFLDNM": "화학분석기능사",
+    "OBLIGFLDCD": 18,
+    "OBLIGFLDNM": "화학",
+    "MDOBLIGFLDCD": 181,
+    "MDOBLIGFLDNM": "화공"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7625,
+    "JMFLDNM": "화훼장식기능사",
+    "OBLIGFLDCD": 24,
+    "OBLIGFLDNM": "농림어업",
+    "MDOBLIGFLDCD": 241,
+    "MDOBLIGFLDNM": "농업"
+  },
+  {
+    "SERIESCD": 4,
+    "SERIESNM": "기능사",
+    "JMCD": 7918,
+    "JMFLDNM": "환경기능사",
+    "OBLIGFLDCD": 26,
+    "OBLIGFLDNM": "환경.에너지",
+    "MDOBLIGFLDCD": 261,
+    "MDOBLIGFLDNM": "환경"
+  }
+]

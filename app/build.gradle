@@ -62,4 +62,7 @@ dependencies {
     //로그인 레이아웃을 꾸미는 의존성
     //noinspection GradleCompatible
     implementation 'com.android.support:design:27.1.1'
+
+    //Json을 파싱하기 위한 Klaxon
+    implementation 'com.beust:klaxon:5.0.1'
 }
