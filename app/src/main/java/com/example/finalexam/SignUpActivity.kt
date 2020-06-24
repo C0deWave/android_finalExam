@@ -23,6 +23,7 @@ class SignUpActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if (task.isSuccessful){
                 println("signup success")
+                FirebaseAuth.getInstance().signOut()
                 finish()
             }else{
                 Toast.makeText(applicationContext,"이메일 형식으로 해주세요",Toast.LENGTH_LONG).show()

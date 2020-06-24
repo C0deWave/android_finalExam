@@ -4,31 +4,30 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.util.Xml
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import com.beust.klaxon.Klaxon
 import com.facebook.login.LoginManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
-import org.xmlpull.v1.XmlPullParser
-import org.xmlpull.v1.XmlPullParserException
 import java.io.*
-import java.net.HttpURLConnection
-import java.net.*
 
 class ConfigurationActivity : AppCompatActivity() {
 
     lateinit var googleSignInClient: GoogleSignInClient
     var arr = arrayListOf<String>()
+    var jmcdList = arrayListOf<Int>()
+    var certificatPosition1 : String = ""
+    var certificatPosition2 : String = ""
+    var jmcdData : Int = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -55,7 +54,9 @@ class ConfigurationActivity : AppCompatActivity() {
         //파이어 베이스에서 닉네임을 지정했는지 확인합니다.
         //닉네임을 정했으면 MainActivity로 넘어갑니다.
         nickNameText.hint = user.displayName
+        //다음 화면으로 넘어가는 기능을 제공합니다.
         createNickButton.setOnClickListener {
+            pushDatabase()
             if (nickNameText.text.toString().isNullOrBlank()){
                 Toast.makeText(applicationContext,"닉네임을 그대로 합니다.",Toast.LENGTH_LONG).show()
                 startActivity(MainActivity.getLaunchIntent(this))
@@ -73,7 +74,6 @@ class ConfigurationActivity : AppCompatActivity() {
                     }
                 startActivity(MainActivity.getLaunchIntent(this))
             }
-
     }
         //Json파일을 불러온다.
         val certificationData = readJson()
@@ -93,17 +93,38 @@ class ConfigurationActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
+                certificatPosition1 = certificationList[position]
                 Toast.makeText(applicationContext,"${certificationList[position]}를 선택했습니다.",Toast.LENGTH_LONG).show()
                 arr.clear()
+                jmcdList.clear()
                 for (i in 0 .. jsonarr.length() - 1)
                 {
                     var jsonobj = jsonarr.getJSONObject(i)
                     if (jsonobj.getString("SERIESNM") == certificationList[position]){
                         arr.add(jsonobj.getString("JMFLDNM"))
+                        jmcdList.add(jsonobj.getInt("JMCD"))
                     }
 
-                    var adpt = ArrayAdapter<String>(this@ConfigurationActivity,android.R.layout.simple_spinner_dropdown_item,arr)
-                    bottomSpinner.adapter = adpt
+                }
+                var adpt = ArrayAdapter<String>(this@ConfigurationActivity,android.R.layout.simple_spinner_dropdown_item,arr)
+                bottomSpinner.adapter = adpt
+
+                // 세부 선택 스피너의 리스너입니다.
+                bottomSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+                    override fun onNothingSelected(parent: AdapterView<*>?) {
+
+                    }
+
+                    override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                    ) {
+                        certificatPosition2 = arr[position]
+                        jmcdData = jmcdList[position]
+                    }
+
                 }
             }
 
@@ -113,6 +134,23 @@ class ConfigurationActivity : AppCompatActivity() {
 //        thread.start()
     }
 
+    fun pushDatabase() {
+//        //기능사인지 기사인지 구분하는 기능을 합니다.
+//        certificatPosition1
+//        //세부 자격증을 표시하는 역할을 합니다.
+//        certificatPosition2
+//        //자격증 종목 코드입니다.
+//        jmcdData
+        val userinfo = UserInfo(certificatPosition1,certificatPosition2,jmcdData)
+
+        //파이어베이스 데이터베이스에 저장합니다.
+        FirebaseDatabase.getInstance().reference
+            .child("users")
+            .child("${FirebaseAuth.getInstance().currentUser?.uid}")
+            .setValue(userinfo)
+    }
+
+    //에셋 폴더에서 JSON을 읽어 옵니다.
     fun readJson(): String? {
         var json : String? = null
         try {

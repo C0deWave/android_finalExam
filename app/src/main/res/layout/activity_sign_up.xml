@@ -13,8 +13,8 @@
         android:layout_marginStart="41dp"
         android:layout_marginTop="130dp"
         android:ems="10"
+        android:hint="Email을 입력해주세요"
         android:inputType="textPersonName"
-        android:text="Email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +25,9 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+        android:hint="password를 입력해 주세요."
         android:inputType="textPersonName"
-        android:text="password"
+        android:password="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SignUpEmailText" />
 

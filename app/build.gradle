@@ -65,4 +65,7 @@ dependencies {
 
     //Json을 파싱하기 위한 Klaxon
     implementation 'com.beust:klaxon:5.0.1'
+
+    //이미지를 쉽게 보여주기 위한 Picasso
+    implementation "com.squareup.picasso:picasso:2.71828"
 }
