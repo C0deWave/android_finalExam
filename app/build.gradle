@@ -71,4 +71,7 @@ dependencies {
 
     //스트래치 기능을 넣기위한 의존성
     implementation 'com.github.AnupKumarPanwar:ScratchView:1.2'
+
+    //간편한 http request를 위한 volley
+    implementation 'com.android.volley:volley:1.1.1'
 }

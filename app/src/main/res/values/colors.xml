@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF5252</color>
     <color name="colorWhite">#FFFFFF</color>
+
+    <!--자격증 카드뷰의 합, 불합 여부를 보여주는 배경색-->
     <color name="goodnews">#55DC57</color>
     <color name="badnews">#E62828</color>
 

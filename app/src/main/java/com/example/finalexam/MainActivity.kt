@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
 
         meowBottomNavigation.add(MeowBottomNavigation.Model(1,R.drawable.ic_calendar))
         meowBottomNavigation.add(MeowBottomNavigation.Model(2,R.drawable.ic_stars))
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
         //초기 화면으로 돌아간다.
         finish()
         startActivity(loginActivity.getLaunchIntent(this))
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 
     companion object {

@@ -49,10 +49,12 @@ class loginActivity : AppCompatActivity() {
     //onCreate보다 먼저 실행되는 함수이다.
     override fun onStart() {
         super.onStart()
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
             //이미 로그인 되어 있다면 패스한다.
             startActivity(MainActivity.getLaunchIntent(this))
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             finish()
         }
     }
@@ -80,6 +82,7 @@ class loginActivity : AppCompatActivity() {
 
         Login_SignUpButton.setOnClickListener {
             startActivity(Intent(this,SignUpActivity::class.java))
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         }
 
         Login_loginButton.setOnClickListener {
@@ -107,6 +110,7 @@ class loginActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if (task.isSuccessful){
                 startActivity(ConfigurationActivity.getLaunchIntent(this))
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             }
         }
     }
@@ -115,6 +119,7 @@ class loginActivity : AppCompatActivity() {
     private fun signInGoogle() {
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 
 
@@ -153,6 +158,7 @@ class loginActivity : AppCompatActivity() {
                 //홈 액티비티로 넘어간다.
                 Toast.makeText(applicationContext, "로그인에 성공했습니다.", Toast.LENGTH_LONG).show()
                 startActivity(ConfigurationActivity.getLaunchIntent(this))
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             } else {
                 //로그인 실패인 거시다.
             }
@@ -168,6 +174,7 @@ class loginActivity : AppCompatActivity() {
                 println("facebook login")
                 Toast.makeText(applicationContext, "로그인에 성공했습니다.", Toast.LENGTH_LONG).show()
                 startActivity(ConfigurationActivity.getLaunchIntent(this))
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             }
         }
     }

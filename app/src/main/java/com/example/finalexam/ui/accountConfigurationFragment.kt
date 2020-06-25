@@ -61,6 +61,7 @@ class accountConfigurationFragment : Fragment() {
         //정보 변경을 위한 버튼 리스너 입니다.
         userInfoChangeButton.setOnClickListener {
             startActivity(ConfigurationActivity.getLaunchIntent(requireContext()))
+            activity?.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             // 정보를 바로 고치기 위해서 onDestroy를 호출해 줍니다.
             onDestroy()
         }
@@ -81,6 +82,7 @@ class accountConfigurationFragment : Fragment() {
                     if (task.isSuccessful){
                         Toast.makeText(context,"회원 탈퇴를 했습니다.",Toast.LENGTH_LONG).show()
                         startActivity(loginActivity.getLaunchIntent(requireContext()))
+                        activity?.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
                     }
                 }
         }

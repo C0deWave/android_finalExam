@@ -9,6 +9,9 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //액션바 숨기
+        supportActionBar?.hide()
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         setContentView(R.layout.activity_sign_up)
         SignUpCompleteButton.setOnClickListener {
             createEmailId()

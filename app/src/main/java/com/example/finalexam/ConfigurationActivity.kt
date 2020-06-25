@@ -60,6 +60,7 @@ class ConfigurationActivity : AppCompatActivity() {
             if (nickNameText.text.toString().isNullOrBlank()){
                 Toast.makeText(applicationContext,"닉네임을 그대로 합니다.",Toast.LENGTH_LONG).show()
                 startActivity(MainActivity.getLaunchIntent(this))
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             }else{
                 val profileUpdate = UserProfileChangeRequest.Builder()
                     .setDisplayName("${nickNameText.text}")
@@ -73,6 +74,7 @@ class ConfigurationActivity : AppCompatActivity() {
                         }
                     }
                 startActivity(MainActivity.getLaunchIntent(this))
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             }
     }
         //Json파일을 불러온다.
@@ -163,46 +165,11 @@ class ConfigurationActivity : AppCompatActivity() {
 
         return json
     }
-//
-//    inner class NetworkThread() : Thread() {
-//        override fun run() {
-//
-//
-//            Log.d("Thread", "스레드 시작")
-//
-//            var site =
-//                URL("http://openapi.q-net.or.kr/api/service/rest/InquiryStatSVC/getGradPiPassList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&baseYY=2019&")
-//            var conn: HttpURLConnection = site.openConnection() as HttpURLConnection
-//            conn.connectTimeout = 30000
-//            conn.readTimeout = 30000
-//            var input = conn.inputStream
-//            var isr = InputStreamReader(input)
-//            var br = BufferedReader(isr)
-//
-//            var str: String? = null
-//            var buf = StringBuffer()
-//            do {
-//                str = br.readLine()
-//                println(str)
-//
-//                if (str != null) {
-//                    Log.d("Thread", "${str}")
-//                    buf.append(str)
-//                }
-//            } while (str != null)
-//
-//            runOnUiThread {
-//                textView5.setText(str)
-//            }
-//            Log.d("Thread", "스레드 종료")
-//            println(buf.toString())
-//        }
-//    }
-    //-------------네트워크 스레드 종료
 
     // 세션 로그아웃 함수
     private fun signOut() {
         startActivity(loginActivity.getLaunchIntent(this))
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         FirebaseAuth.getInstance().signOut();
         // 구글 세션 로그 아웃
         googleSignInClient?.signOut()
