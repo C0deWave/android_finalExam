@@ -36,10 +36,15 @@ class accountConfigurationFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-
-
         // 닉네임을 설정해서 보여주는 역할을 합니다.
         userName.text = user?.displayName.toString()
+
+        //이메일을 보여줍니다.
+        userEmailText.text = user?.email.toString()
+
+        if (userEmailText.text.isNullOrBlank()){
+            userEmailText.text = ""
+        }
 
         //원하는 자격증이 무엇인지 확인해 주는 기능을 담당합니다.
         if (user != null) {
@@ -52,7 +57,7 @@ class accountConfigurationFragment : Fragment() {
                     }
 
                     override fun onDataChange(p0: DataSnapshot) {
-                        var data = p0.value as Map<String,Any>
+                        var data = p0?.value as Map<String,Any>
                         userCertificationText.text = data["cert2"].toString()
                     }
                 }).toString()

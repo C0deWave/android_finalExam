@@ -2,6 +2,7 @@ package com.example.finalexam
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -64,6 +65,7 @@ class ConfigurationActivity : AppCompatActivity() {
             }else{
                 val profileUpdate = UserProfileChangeRequest.Builder()
                     .setDisplayName("${nickNameText.text}")
+                    .setPhotoUri(Uri.parse("https://i.ytimg.com/vi/g9k1vprdNEo/maxresdefault.jpg"))
                     .build()
 
                 user?.updateProfile(profileUpdate)

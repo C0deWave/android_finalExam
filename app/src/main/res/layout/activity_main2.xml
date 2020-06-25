@@ -25,13 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:mbn_backgroundBottomColor="@color/colorPrimary"
         app:mbn_countBackgroundColor="#dd6d00"
-        app:mbn_defaultIconColor="@color/colorWhite"
-        app:mbn_selectedIconColor="@color/colorAccent" />
+        app:mbn_defaultIconColor="#FFFFFF"
+        app:mbn_selectedIconColor="@color/colorAccent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

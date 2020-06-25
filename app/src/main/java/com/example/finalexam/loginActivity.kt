@@ -1,8 +1,6 @@
 package com.example.finalexam
 
-//페이스북 로그인 연동을 위함이다.
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -10,7 +8,6 @@ import android.os.Bundle
 import android.util.Base64
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.finalexam.ui.accountConfigurationFragment
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException

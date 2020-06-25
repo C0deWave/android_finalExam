@@ -157,30 +157,30 @@ class predictionFragment : Fragment() {
 
     fun setPredict(predictResult: Int, starisyy1: String?) {
         //합격 확률 안쪽으로 들어온 경우
-        Toast.makeText(context,"${predictResult} ${starisyy1}",Toast.LENGTH_LONG).show()
+        Toast.makeText(requireContext(),"${predictResult} ${starisyy1}",Toast.LENGTH_LONG).show()
         if (predictResult < starisyy1!!.toInt()){
-            predictionResultImageView.setBackgroundColor( requireContext().getColor(R.color.goodnews) )
-            predictionResultImageView.setImageResource(R.drawable.crystallballgood)
+            predictionResultImageView?.setBackgroundColor( requireContext().getColor(R.color.goodnews) )
+            predictionResultImageView?.setImageResource(R.drawable.crystallballgood)
         }else{
-            predictionResultImageView.setBackgroundColor( requireContext().getColor(R.color.badnews) )
-            predictionResultImageView.setImageResource(R.drawable.crystallballbad)
+            predictionResultImageView?.setBackgroundColor( requireContext().getColor(R.color.badnews) )
+            predictionResultImageView?.setImageResource(R.drawable.crystallballbad)
         }
 
         //준비가 끝나면 예언준비 이미지를 페이드 아웃으로 사라지게 합니다.
-        AnimatorInflater.loadAnimator(context,R.animator.predicr_clear_animator).apply {
+        AnimatorInflater.loadAnimator(requireContext(),R.animator.predicr_clear_animator)?.apply {
             addListener(object : AnimatorListenerAdapter(){
                 //애니매이션이 끝나면 이미지를 안보이게 해서 수정이 클릭되게 합니다.
                 override fun onAnimationEnd(animation: Animator?) {
-                    imageView2.visibility =View.INVISIBLE
+                    imageView2?.visibility =View.INVISIBLE
                 }
             })
             setTarget(imageView2)
             start()
         }
 
-        fingerImage.visibility = View.VISIBLE
-        val animation = AnimationUtils.loadAnimation(activity,R.anim.finger_animation)
-        fingerImage.startAnimation(animation)
+        fingerImage?.visibility = View.VISIBLE
+        val animation = AnimationUtils.loadAnimation(requireActivity(),R.anim.finger_animation)
+        fingerImage?.startAnimation(animation)
     }
 
     @Throws (XmlPullParserException::class, IOException::class)
