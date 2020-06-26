@@ -1,6 +1,5 @@
 package com.example.finalexam.ui
 
-
 import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.animation.AnimatorListenerAdapter
@@ -14,11 +13,13 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.FragmentManager
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.anupkumarpanwar.scratchview.ScratchView
+import com.example.finalexam.MainActivity
 import com.example.finalexam.R
 import com.example.finalexam.predictXmlData
 import com.google.firebase.auth.FirebaseAuth
@@ -31,8 +32,11 @@ import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import org.xmlpull.v1.XmlPullParserFactory
 import java.io.*
+import java.lang.IllegalStateException
 import java.time.LocalDateTime
 import kotlin.random.Random
+
+// 합격예측 프래그먼트의 코틀린파일 입니다.
 
 class predictionFragment : Fragment() {
 
@@ -77,43 +81,43 @@ class predictionFragment : Fragment() {
 
                     predictXml = parseXml(parser)
 
-                    //---------------------------------------------------------------
-                    //랜덤 함수를 해서 합격 예측을 합니다.
-                    var predictResult = Random(LocalDateTime.now().hashCode()).nextInt(100)+1
-                    Log.d("time","${LocalDateTime.now()}")
-                    var cert1 = ""
-
-                    FirebaseAuth.getInstance().currentUser?.uid?.let {
-                        FirebaseDatabase.getInstance().reference
-                            .child("users")
-                            .child(it)
-                            .addListenerForSingleValueEvent(object  : ValueEventListener {
-                                override fun onCancelled(p0: DatabaseError) {
-
-                                }
-
-                                override fun onDataChange(p0: DataSnapshot) {
-                                    var data = p0.value as Map<String,Any>
-                                    cert1 = data["cert1"].toString()
-
-                                    when(cert1){
-                                        "기능사" -> { setPredict(predictResult , predictXml?.get(5)?.starisyy1) }
-                                        "기사" -> {setPredict(predictResult , predictXml?.get(2)?.starisyy1)}
-                                        "기능장" -> {setPredict(predictResult , predictXml?.get(1)?.starisyy1)}
-                                        "기술사" -> {setPredict(predictResult , predictXml?.get(0)?.starisyy1)}
-                                        else -> {Toast.makeText(context,"cert1의 값이 이상합니다. ${cert1}",Toast.LENGTH_LONG).show()}
-                                    }
-                                }
-                            }).toString()
-                    }
-
-
-
                 }catch (e : XmlPullParserException){
                     e.printStackTrace()
                 }catch (e : IOException){
                     e.printStackTrace()
                 }
+
+                //---------------------------------------------------------------
+                //volley로 값을 가져온 상태에서만 가능하기 때문에 여기에 위치되어있습니다.
+                //랜덤 함수를 해서 합격 예측을 합니다.
+                var predictResult = Random(LocalDateTime.now().hashCode()).nextInt(100)+1
+                Log.d("time","${LocalDateTime.now()}")
+                var cert1 = ""
+
+                FirebaseAuth.getInstance().currentUser?.uid?.let {
+                    FirebaseDatabase.getInstance().reference
+                        .child("users")
+                        .child(it)
+                        .addListenerForSingleValueEvent(object  : ValueEventListener {
+                            override fun onCancelled(p0: DatabaseError) {
+
+                            }
+
+                            override fun onDataChange(p0: DataSnapshot) {
+                                var data = p0.value as Map<String,Any>
+                                cert1 = data["cert1"].toString()
+
+                                when(cert1){
+                                    "기능사" -> { setPredict(predictResult , predictXml?.get(5)?.starisyy1) }
+                                    "기사" -> {setPredict(predictResult , predictXml?.get(2)?.starisyy1)}
+                                    "기능장" -> {setPredict(predictResult , predictXml?.get(1)?.starisyy1)}
+                                    "기술사" -> {setPredict(predictResult , predictXml?.get(0)?.starisyy1)}
+                                    else -> {Toast.makeText(context,"cert1의 값이 이상합니다. ${cert1}",Toast.LENGTH_LONG).show()}
+                                }
+                            }
+                        }).toString()
+                }
+
             },
             Response.ErrorListener { Log.d("Volley","Volley에러") })
 
@@ -157,7 +161,6 @@ class predictionFragment : Fragment() {
 
     fun setPredict(predictResult: Int, starisyy1: String?) {
         //합격 확률 안쪽으로 들어온 경우
-        Toast.makeText(requireContext(),"${predictResult} ${starisyy1}",Toast.LENGTH_LONG).show()
         if (predictResult < starisyy1!!.toInt()){
             predictionResultImageView?.setBackgroundColor( requireContext().getColor(R.color.goodnews) )
             predictionResultImageView?.setImageResource(R.drawable.crystallballgood)
@@ -166,21 +169,27 @@ class predictionFragment : Fragment() {
             predictionResultImageView?.setImageResource(R.drawable.crystallballbad)
         }
 
-        //준비가 끝나면 예언준비 이미지를 페이드 아웃으로 사라지게 합니다.
-        AnimatorInflater.loadAnimator(requireContext(),R.animator.predicr_clear_animator)?.apply {
-            addListener(object : AnimatorListenerAdapter(){
-                //애니매이션이 끝나면 이미지를 안보이게 해서 수정이 클릭되게 합니다.
-                override fun onAnimationEnd(animation: Animator?) {
-                    imageView2?.visibility =View.INVISIBLE
+        //빠르게 화면전환을 했을때 에러가 나는것을 try로 잡았습니다.
+        try {
+            Toast.makeText(requireContext(),"${predictResult} ${starisyy1}",Toast.LENGTH_LONG).show()
+            AnimatorInflater.loadAnimator(requireContext(), R.animator.predicr_clear_animator)
+                ?.apply {
+                    addListener(object : AnimatorListenerAdapter() {
+                        //애니매이션이 끝나면 이미지를 안보이게 해서 수정이 클릭되게 합니다.
+                        override fun onAnimationEnd(animation: Animator?) {
+                            imageView2?.visibility = View.INVISIBLE
+                        }
+                    })
+                    setTarget(imageView2)
+                    start()
                 }
-            })
-            setTarget(imageView2)
-            start()
-        }
 
-        fingerImage?.visibility = View.VISIBLE
-        val animation = AnimationUtils.loadAnimation(requireActivity(),R.anim.finger_animation)
-        fingerImage?.startAnimation(animation)
+            fingerImage?.visibility = View.VISIBLE
+            val animation = AnimationUtils.loadAnimation(requireActivity(), R.anim.finger_animation)
+            fingerImage?.startAnimation(animation)
+        }catch (e : IllegalStateException){
+            e.printStackTrace()
+        }
     }
 
     @Throws (XmlPullParserException::class, IOException::class)
@@ -214,6 +223,7 @@ class predictionFragment : Fragment() {
         }
         return dataArray
     }
+
 
     companion object {
         fun newInstance(): predictionFragment {

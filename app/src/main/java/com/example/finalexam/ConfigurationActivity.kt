@@ -20,6 +20,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import java.io.*
 
+//로그인을 마치고 원하는 자격증과 닉네임을 정하는 부분입니다.
+
 class ConfigurationActivity : AppCompatActivity() {
 
     lateinit var googleSignInClient: GoogleSignInClient

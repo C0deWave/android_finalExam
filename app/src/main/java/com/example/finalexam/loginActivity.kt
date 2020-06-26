@@ -28,6 +28,7 @@ import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 import java.util.*
 
+//가장 처음에 로그인을 하는 화면의 코틀린 파일입니다.
 
 class loginActivity : AppCompatActivity() {
 

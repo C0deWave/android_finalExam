@@ -17,6 +17,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main2.*
 
+//로그인이 완료된 후의 메인 클래스입니다.
 
 //수정 연습
 class MainActivity : AppCompatActivity() {

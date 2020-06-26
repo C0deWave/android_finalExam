@@ -16,6 +16,8 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_account_configuration.*
 import kotlinx.android.synthetic.main.fragment_account_configuration.view.*
 
+//사용자 계정 프레그먼트의 코틀린파일입니다.
+
 class accountConfigurationFragment : Fragment() {
 
     val user = FirebaseAuth.getInstance().currentUser
