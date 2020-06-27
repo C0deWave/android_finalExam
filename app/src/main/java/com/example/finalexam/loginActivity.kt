@@ -31,6 +31,8 @@ import java.util.*
 //가장 처음에 로그인을 하는 화면의 코틀린 파일입니다.
 
 class loginActivity : AppCompatActivity() {
+    //-------------------------------------------------------------------------------------
+    //전역변수 설정
 
     //구글 로그인 변수
     lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -43,7 +45,8 @@ class loginActivity : AppCompatActivity() {
     //페이스북에서 이용
     lateinit var callbackManager: CallbackManager
 
-
+    //---------------------------------------------------------------------------------------
+    //이전에 로그인을 했으면 바로 넘어가는 기능을 제공합니다.
     //onCreate보다 먼저 실행되는 함수이다.
     override fun onStart() {
         super.onStart()
@@ -55,39 +58,48 @@ class loginActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             finish()
         }
-    }
+    }//end of onStart
 
-
+    //--------------------------------------------------------------------------------------
+    //onCreate함수입니다.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //액션바 숨기
         supportActionBar?.hide()
         setContentView(R.layout.activity_login)
 
+        //페이스북 개발자용 해시키 생성함수다.
+        //다른 기기에서 로그인할 경우에는 페이스북 개발자 사이트에 들어가서 해당값을 바꿔주어야 한다.
+        printHashKey(this)
+
         firebaseAuth = FirebaseAuth.getInstance()
 
+        //처음 변수들의 초기화를 담당한다.
         configureSignIn()
 
+        //구글 로그인 버튼을 누를때
         googleLoginButton.setOnClickListener {
             signInGoogle()
         }
 
-        printHashKey(this)
-
+        //페이스북 로그인을 누를 때
         facebookLoginButton.setOnClickListener {
             signInFacebook()
         }
 
+        //회원가입버튼을 누를 때
         Login_SignUpButton.setOnClickListener {
             startActivity(Intent(this,SignUpActivity::class.java))
             overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         }
 
+        //기본 이메일로 로그인을 할때
         Login_loginButton.setOnClickListener {
             loginEmail()
         }
-    }
+    }//end of onCreate
 
+    //---------------------------------------------------------------------------------------
     // 각종 변수들의 초기화를 담당하는 함수이다.
     private fun configureSignIn() {
         mGoogleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -100,19 +112,28 @@ class loginActivity : AppCompatActivity() {
         callbackManager = CallbackManager.Factory.create()
     }
 
+    //----------------------------------------------------------------------------------------
     //기본 이메일로 로그인을 하는 함수이다.
     fun loginEmail(){
         val email = Login_email.text.toString()
         val password = Login_password.text.toString()
 
+        if (email.isNullOrBlank() || password.isNullOrBlank()){
+            Toast.makeText(applicationContext,"이메일 비밀번호를 입력해 주세요.",Toast.LENGTH_LONG).show()
+            return
+        }
+
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if (task.isSuccessful){
                 startActivity(ConfigurationActivity.getLaunchIntent(this))
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            }else{
+                Toast.makeText(applicationContext,"로그인 실패",Toast.LENGTH_LONG).show()
             }
         }
     }
 
+    //------------------------------------------------------------------------------------------
     //구글 로그인을 해주는 함수이다.
     private fun signInGoogle() {
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
@@ -120,7 +141,7 @@ class loginActivity : AppCompatActivity() {
         overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 
-
+    //-----------------------------------------------------------------------------------------
     //페이스북에서 로그인을 하게 해주는 함수이다.
     fun signInFacebook() {
         LoginManager.getInstance().loginBehavior = LoginBehavior.WEB_VIEW_ONLY
@@ -146,7 +167,7 @@ class loginActivity : AppCompatActivity() {
             })
     }
 
-
+    //------------------------------------------------------------------------------------
     //구글에서 로그인한 정보를 파이어베이스에 연동하는 코드이다.
     fun firebaseAuthWhitGoogle(acct: GoogleSignInAccount?) {
         var credential = GoogleAuthProvider.getCredential(acct?.idToken, null)
@@ -163,8 +184,8 @@ class loginActivity : AppCompatActivity() {
         }
     }
 
-
-    //페이스북에서 로그인한 정보를 파이어베이스에 연동하느 함수이다.
+    //----------------------------------------------------------------------------------------
+    //페이스북에서 로그인한 정보를 파이어베이스에 연동하는 함수이다.
     private fun firebaseAuthWithFacebook(result: LoginResult?) {
         var credential = FacebookAuthProvider.getCredential(result?.accessToken?.token!!)
         FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener { task ->
@@ -177,6 +198,7 @@ class loginActivity : AppCompatActivity() {
         }
     }
 
+    //-------------------------------------------------------------------------------------
     //액티비티에서 결과값을 받았을 때 실행하는 함수이다.
     //로그인을 하고 나서 토큰을 받아 올 것이다.
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -194,7 +216,7 @@ class loginActivity : AppCompatActivity() {
         }
     }
 
-
+    //------------------------------------------------------------------------------------
     //페이스북 헤시키 생성 함수
     fun printHashKey(pContext: Context) {
         try {
@@ -211,7 +233,7 @@ class loginActivity : AppCompatActivity() {
         }
     }
 
-
+    //---------------------------------------------------------------------------------
     // 외부에서 로그아웃을 하게 해주는 함수이다.
     // 메인에서 호출하는 것을 볼 수 있다.
     companion object {

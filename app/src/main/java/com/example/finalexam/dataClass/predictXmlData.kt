@@ -1,4 +1,4 @@
-package com.example.finalexam
+package com.example.finalexam.dataClass
 
 //xml 파싱을 할때 각 종목펼로 필기시험 합격 API의 합격률을 저장하는 클래스입니다.
 //원래는 앞에 종목 분류 (e. 기술사)도 있었으나 Volley호출 부분에서 euc-kr인코딩이 처리가 되지않아

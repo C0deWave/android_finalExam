@@ -19,21 +19,25 @@ import kotlinx.android.synthetic.main.activity_main2.*
 
 //로그인이 완료된 후의 메인 클래스입니다.
 
-//수정 연습
 class MainActivity : AppCompatActivity() {
 
+    //로그인한 유저의 정보입니다.
     val user = FirebaseAuth.getInstance().currentUser
 
+    //------------------------------------------------------------------------------------------
+    //onCreate 함수입니다.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         overridePendingTransition(R.anim.fadein, R.anim.fadeout)
 
+        //처음에 하단에 app bar를 만들어 줍니다.
         meowBottomNavigation.add(MeowBottomNavigation.Model(1,R.drawable.ic_calendar))
         meowBottomNavigation.add(MeowBottomNavigation.Model(2,R.drawable.ic_stars))
         meowBottomNavigation.add(MeowBottomNavigation.Model(3,R.drawable.ic_bulltinboard))
         meowBottomNavigation.add(MeowBottomNavigation.Model(4,R.drawable.ic_about))
 
+        //하단 네비게이션에 리스너를 붙여서 프레그먼트도 바뀌게 합니다.
         meowBottomNavigation.setOnClickMenuListener {
             when(it.id){
                 1 -> {setFragment(calendarFragment.newInstance())}
@@ -43,19 +47,22 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //처음 화면을 캘린더로 지정한다.
+        //처음 Fragment를 캘린더로 지정한다.
         setFragment(calendarFragment.newInstance())
         meowBottomNavigation.show(1)
-    }
+    }//end of onCreate
 
+    //-------------------------------------------------------------------------------------------
+    //메뉴 전환시 Fragment를 전환하는 함수 입니다.
     fun setFragment(fragment : Fragment){
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.mainFrame,fragment,"mainActivity")
             .commit()
-    }
+    }//end of setFragment
 
 
+    //-------------------------------------------------------------------------------------------
     // 세션 로그아웃 함수
     fun signOut() {
         lateinit var googleSignInClient: GoogleSignInClient
@@ -80,8 +87,10 @@ class MainActivity : AppCompatActivity() {
         finish()
         startActivity(loginActivity.getLaunchIntent(this))
         overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-    }
+    }//end of signOut
 
+    //-------------------------------------------------------------------------------------------
+    //액티비티 스택을 쌓지 않고 화면을 넘어가게 해주는 싱글톤 함수입니다.
     companion object {
         fun getLaunchIntent(from: Context) = Intent(from, MainActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
