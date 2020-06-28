@@ -259,9 +259,12 @@ class calendarFragment : Fragment() {
                     }
 
                     override fun onDataChange(p0: DataSnapshot) {
-                        var data = p0?.value as Map<String,Any>
-                        result = data["cert1"].toString()
-
+                        try {
+                            var data = p0?.value as Map<String, Any>
+                            result = data["cert1"].toString()
+                        }catch (e: TypeCastException){
+                            e.printStackTrace()
+                        }
                         //원하는자격증에 따라 url을 호출합니다.
                         callUrlAndXmlParse(result)
 
