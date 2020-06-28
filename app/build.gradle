@@ -76,4 +76,7 @@ dependencies {
 
     //원형 이미지 구현하기 위한 의존성
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //개선된 캘린더뷰
+    implementation 'sun.bob:mcalendarview:1.0.0'
 }
