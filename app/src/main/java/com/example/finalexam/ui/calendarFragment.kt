@@ -14,6 +14,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.finalexam.R
 import com.example.finalexam.dataClass.certificationTestXmlData
+import com.example.finalexam.dataClass.learnData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -28,10 +29,10 @@ import sun.bob.mcalendarview.listeners.OnDateClickListener
 import sun.bob.mcalendarview.vo.DateData
 import java.io.ByteArrayInputStream
 import java.io.IOException
+import java.lang.ClassCastException
 import java.lang.NullPointerException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-
 
 class calendarFragment : Fragment() {
 
@@ -39,6 +40,8 @@ class calendarFragment : Fragment() {
     var Xmldata : ArrayList<certificationTestXmlData>? = null
     //원하는 자격증의 대분류
     var result : String = ""
+
+    var learnData : learnData? = learnData()
 
     //오늘의 날짜
     var year = 0
@@ -75,19 +78,21 @@ class calendarFragment : Fragment() {
         cardView.visibility = View.INVISIBLE
 
 
-
         btn_save.setOnClickListener {
             cardView.visibility = View.INVISIBLE
             tv_content.visibility = View.VISIBLE
 
             when(rg.checkedRadioButtonId) {
                 R.id.rbtn_complete -> {
-                    tv_content.text = "공부완료"
+//                    tv_content.text = "공부완료"
                     calendarView.markDate(DateData(
                         year,
                         month,
                         day
                     ).setMarkStyle(MarkStyle.DOT, Color.RED))
+
+                    //클래스에 데이터 값을 추가합니다.
+//                    learnData?.learnList?.add(com.example.finalexam.dataClass.learnData.date(year, month, day))
                 }
 
                 R.id.rbtn_uncomplete -> {
@@ -96,6 +101,14 @@ class calendarFragment : Fragment() {
                         month,
                         day
                     ).setMarkStyle(MarkStyle.DOT, Color.RED))
+                    //클래스에 데이터 값을 뻅니다.
+//                    learnData?.learnList?.remove(
+//                        com.example.finalexam.dataClass.learnData.date(
+//                            year,
+//                            month,
+//                            day
+//                        )
+//                    )
                 }
             }
         }
@@ -104,6 +117,30 @@ class calendarFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+//        try {
+//            FirebaseDatabase.getInstance().reference
+//                .child("learnDay")
+//                .child(FirebaseAuth.getInstance().currentUser!!.uid)
+//                .addListenerForSingleValueEvent(object : ValueEventListener {
+//                    override fun onCancelled(p0: DatabaseError) {
+//                    }
+//
+//                    override fun onDataChange(p0: DataSnapshot) {
+//                        var data :Map<String, Any>? = p0?.value as Map<String, learnData>?
+//                        learnData = (data?.get("learnList") ?: learnData()) as learnData?
+//
+//                        Log.d("호출 완료", "${learnData?.learnList}")
+//
+//                        //원하는자격증에 따라 url을 호출합니다.
+//                        callUrlAndXmlParse(result)
+//
+//                    }
+//                })
+//        }catch (e:TypeCastException){
+//            e.printStackTrace()
+//        }catch (e : ClassCastException){
+//            e.printStackTrace()
+//        }
         //원하는 자격증이 뭔지 확인하는 함수입니다.
         whatWantCertificat()
 
@@ -112,6 +149,14 @@ class calendarFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         discheckTestDate()
+//
+//        //파이어베이스 데이터 베이스에 값을 저장합니다.
+//        FirebaseDatabase.getInstance().reference
+//            .child("learnDay")
+//            .child(FirebaseAuth.getInstance().currentUser!!.uid)
+//            .setValue(learnData?.learnList)
+
+        Log.d("date","${learnData?.learnList}")
     }
 
     fun checkTestDate() {
@@ -202,6 +247,7 @@ class calendarFragment : Fragment() {
 
     //----------------------------------------------------------------------------------------
     fun whatWantCertificat(){
+
         val user = FirebaseAuth.getInstance().currentUser
         //원하는 자격증을 바인딩합니다.
         if (user != null) {
@@ -229,8 +275,8 @@ class calendarFragment : Fragment() {
         var url = ""
 
         when(result){
-            "기사" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
-            "기능사" -> { url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
+            "기사"  -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
+            "기능사" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
             "기능장" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getMCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
             "기술사" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getPEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
         }
@@ -281,6 +327,7 @@ class calendarFragment : Fragment() {
             //파싱이 완료되고 실행하는 기능입니다.
             //시험 일정을 체크하는 함수입니다.
             checkTestDate()
+            Log.d("checkComplete","checkComplete")
 
         }catch (e : XmlPullParserException){
             e.printStackTrace()
