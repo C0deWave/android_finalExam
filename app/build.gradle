@@ -79,4 +79,9 @@ dependencies {
 
     //개선된 캘린더뷰
     implementation 'sun.bob:mcalendarview:1.0.0'
+
+    //시간 관련 라이브러리
+    implementation 'net.danlew:android.joda:2.9.9.1'
+
+
 }
