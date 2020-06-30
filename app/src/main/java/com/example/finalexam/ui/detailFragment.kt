@@ -75,6 +75,7 @@ class detailFragment(data: Post?) : Fragment() {
         detail_title_text.text = post?.title
         detail_content_text.text = post?.message
         detail_witter_text.text = post?.writerId
+        detail_ImageView
 
         val layoutManager = LinearLayoutManager(requireContext())
         comment_rv.layoutManager = layoutManager

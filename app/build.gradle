@@ -86,5 +86,4 @@ dependencies {
     //시간 관련 라이브러리
     implementation 'net.danlew:android.joda:2.9.9.1'
 
-
 }

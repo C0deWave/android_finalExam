@@ -26,8 +26,7 @@ class writeFragment : Fragment() {
     val GET_GALLERY_IMAGE = 200;
 
     //선택된 이미지의 Uri
-    lateinit var selectImageUri : Uri
-
+    var selectImageUri : Uri? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,33 +69,40 @@ class writeFragment : Fragment() {
 
             val storage = FirebaseStorage.getInstance().getReference("/image/${post.postId}")
             //나중에 이미지 업로드 부분 시간되면 구현하기
-            val upload = storage.putFile(selectImageUri)
-            upload.addOnFailureListener{
+            val upload = selectImageUri?.let { it1 -> storage.putFile(it1) }
+
+            upload?.addOnFailureListener{
                 Log.d("image","이미지 업로드 실패")
-            }.addOnSuccessListener {
+            }?.addOnSuccessListener {
                 Log.d("image","이미지 업로드 성공")
             }
 
-            val urlTask = upload.continueWithTask{ task ->
+            val urlTask = upload?.continueWithTask{ task ->
                 if (!task.isSuccessful){
                     task.exception?.let {
                         throw it
                     }
                 }
                 storage.downloadUrl
-            }.addOnCompleteListener { task ->
+            }?.addOnCompleteListener { task ->
                 if (task.isSuccessful){
                     post.bgUri = task.result.toString()
 
                     newRef.setValue(post)
-                    Toast.makeText(requireContext(),"저장 성공!!!",Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(),"아마자 추가해서 저장 성공!!!",Toast.LENGTH_LONG).show()
 
                     (activity as MainActivity).setFragment(noticeBoardFragment.newInstance())
                 }
             }
 
 
-//            meowBottomNavigation.show(3)
+            if(urlTask == null) {
+                Log.d("게시글 업로드", "게시글 업로")
+                newRef.setValue(post)
+                Toast.makeText(requireContext(), "이미지 없이 저장 성공!!!", Toast.LENGTH_LONG).show()
+
+                (activity as MainActivity).setFragment(noticeBoardFragment.newInstance())
+            }
 
         }
     }
