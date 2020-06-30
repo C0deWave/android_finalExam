@@ -6,7 +6,7 @@ class Comment {
     /*댓글의 대상이되는 글의 id*/
     var postId=""
     /*댓글작성자의 아이디*/
-    var writerId=""
+//    var writerId=""
     /*댓글 내용*/
     var message=""
     /*작성시간*/

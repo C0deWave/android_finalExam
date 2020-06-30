@@ -15,6 +15,7 @@ class Post {
 
     /*글이 쓰여진 시간*/
     var writeTime:Any=Any()
+    var descWriteTime:Any=Any()
 
     /*댓글의 개수*/
     var commentCount=0

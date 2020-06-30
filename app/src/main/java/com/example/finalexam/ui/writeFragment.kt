@@ -4,6 +4,7 @@ import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,8 +16,10 @@ import com.example.finalexam.dataClass.Post
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ServerValue
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.fragment_write.*
+import java.util.*
 
 class writeFragment : Fragment() {
 
@@ -24,6 +27,15 @@ class writeFragment : Fragment() {
 
     //선택된 이미지의 Uri
     lateinit var selectImageUri : Uri
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_write, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -36,6 +48,7 @@ class writeFragment : Fragment() {
             )
             startActivityForResult(intent, GET_GALLERY_IMAGE)
         }
+
 
         /*게시글 올리기 버튼*/
         sendButton.setOnClickListener {
@@ -52,28 +65,42 @@ class writeFragment : Fragment() {
             post.title = titleEditText.text.toString()
             post.message = contentEditText.text.toString()
             post.postId = newRef.key.toString()
-            post.writerId = FirebaseAuth.getInstance().currentUser?.uid!!
+            post.writerId = FirebaseAuth.getInstance().currentUser?.displayName!!
+            post.descWriteTime = -1 * Date().time
 
+            val storage = FirebaseStorage.getInstance().getReference("/image/${post.postId}")
             //나중에 이미지 업로드 부분 시간되면 구현하기
-//            post.bgUri
+            val upload = storage.putFile(selectImageUri)
+            upload.addOnFailureListener{
+                Log.d("image","이미지 업로드 실패")
+            }.addOnSuccessListener {
+                Log.d("image","이미지 업로드 성공")
+            }
 
-            newRef.setValue(post)
-            Toast.makeText(requireContext(),"저장 성공!!!",Toast.LENGTH_LONG).show()
+            val urlTask = upload.continueWithTask{ task ->
+                if (!task.isSuccessful){
+                    task.exception?.let {
+                        throw it
+                    }
+                }
+                storage.downloadUrl
+            }.addOnCompleteListener { task ->
+                if (task.isSuccessful){
+                    post.bgUri = task.result.toString()
 
-            (activity as MainActivity).setFragment(noticeBoardFragment.newInstance())
+                    newRef.setValue(post)
+                    Toast.makeText(requireContext(),"저장 성공!!!",Toast.LENGTH_LONG).show()
+
+                    (activity as MainActivity).setFragment(noticeBoardFragment.newInstance())
+                }
+            }
+
+
 //            meowBottomNavigation.show(3)
 
         }
     }
 
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_write, container, false)
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

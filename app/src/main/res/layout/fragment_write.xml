@@ -62,6 +62,7 @@
                 android:layout_marginBottom="8dp"
                 android:background="#FFFFFF"
                 android:ems="10"
+                android:gravity="start|top"
                 android:hint="내용을 적어주세요."
                 android:inputType="textPersonName"
                 app:layout_constraintBottom_toTopOf="@+id/guideline3"

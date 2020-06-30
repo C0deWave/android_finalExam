@@ -55,6 +55,9 @@ dependencies {
     //파이어베이스 데이터 사용을 위한 의존성
     implementation 'com.google.firebase:firebase-database:16.0.4'
 
+    //파이어베이스 데이터 스토리지를 이용하기 위한 의존성
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+
     //bottom app bar를 구현하기 위해서 이용한다.
     implementation 'com.etebarian:meow-bottom-navigation:1.0.4'
 
