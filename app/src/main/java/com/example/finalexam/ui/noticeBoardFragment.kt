@@ -45,6 +45,16 @@ class noticeBoardFragment : Fragment() {
         return view
     }
 
+    override fun onPause() {
+        super.onPause()
+        listener?.let { it1 ->
+            FirebaseDatabase.getInstance().getReference("/Posts").removeEventListener(
+                it1
+            )
+            Log.d("리스너 제거","리스너 제거")
+        }
+    }
+
     override fun onResume() {
         super.onResume()
 
@@ -149,16 +159,6 @@ class noticeBoardFragment : Fragment() {
                     }
                 }
             })
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
     }
 
     companion object {

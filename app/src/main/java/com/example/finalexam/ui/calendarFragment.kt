@@ -33,6 +33,7 @@ import java.lang.ClassCastException
 import java.lang.NullPointerException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.time.format.DateTimeParseException
 
 class calendarFragment : Fragment() {
 
@@ -168,34 +169,38 @@ class calendarFragment : Fragment() {
 
             for (data in this!!.Xmldata!!) {
                 //필기시험 일자
-                if (data.docexamdt != "XXXXXXXX") {
-                    date = LocalDate.parse(
-                        data.docexamdt,
-                        DateTimeFormatter.ofPattern("yyyyMMdd")
-                    )
-                    calendarView.markDate(
-                        DateData(
-                            date.year,
-                            date.monthValue,
-                            date.dayOfMonth
-                        ).setMarkStyle(MarkStyle.BACKGROUND, Color.MAGENTA)
-                    )
-                    Toast.makeText(requireContext(), "마킹됨", Toast.LENGTH_LONG).show()
-                    Log.d("date", "${date.year} , ${date.monthValue} , ${date.dayOfMonth}")
-                }
-                if (data.docpassdt != "XXXXXXXX") {
-                    //필기시험 합격자 발표일
-                    date = LocalDate.parse(
-                        data.docpassdt,
-                        DateTimeFormatter.ofPattern("yyyyMMdd")
-                    )
-                    calendarView.markDate(
-                        DateData(
-                            date.year,
-                            date.monthValue,
-                            date.dayOfMonth
-                        ).setMarkStyle(MarkStyle.BACKGROUND, Color.CYAN)
-                    )
+                try {
+                    if (data.docexamdt != "XXXXXXXX" || data.docexamdt != "") {
+                        date = LocalDate.parse(
+                            data.docexamdt,
+                            DateTimeFormatter.ofPattern("yyyyMMdd")
+                        )
+                        calendarView.markDate(
+                            DateData(
+                                date.year,
+                                date.monthValue,
+                                date.dayOfMonth
+                            ).setMarkStyle(MarkStyle.BACKGROUND, Color.MAGENTA)
+                        )
+                        Toast.makeText(requireContext(), "마킹됨", Toast.LENGTH_LONG).show()
+                        Log.d("date", "${date.year} , ${date.monthValue} , ${date.dayOfMonth}")
+                    }
+                    if (data.docpassdt != "XXXXXXXX") {
+                        //필기시험 합격자 발표일
+                        date = LocalDate.parse(
+                            data.docpassdt,
+                            DateTimeFormatter.ofPattern("yyyyMMdd")
+                        )
+                        calendarView.markDate(
+                            DateData(
+                                date.year,
+                                date.monthValue,
+                                date.dayOfMonth
+                            ).setMarkStyle(MarkStyle.BACKGROUND, Color.CYAN)
+                        )
+                    }
+                }catch (e:DateTimeParseException){
+                    e.printStackTrace()
                 }
             }
         }catch (e : NullPointerException){
@@ -209,35 +214,41 @@ class calendarFragment : Fragment() {
         var date : LocalDate? = null
         try {
             for (data in this!!.Xmldata!!) {
-                //필기시험 일자
-                if (data.docexamdt != "XXXXXXXX") {
-                    date = LocalDate.parse(
-                        data.docexamdt,
-                        DateTimeFormatter.ofPattern("yyyyMMdd")
-                    )
-                    calendarView.unMarkDate(
-                        DateData(
-                            date.year,
-                            date.monthValue,
-                            date.dayOfMonth
-                        ).setMarkStyle(MarkStyle.BACKGROUND, Color.MAGENTA)
-                    )
-                    Toast.makeText(requireContext(), "마킹됨", Toast.LENGTH_LONG).show()
-                    Log.d("date", "${date.year} , ${date.monthValue} , ${date.dayOfMonth}")
-                }
-                if (data.docpassdt != "XXXXXXXX") {
-                    //필기시험 합격자 발표일
-                    date = LocalDate.parse(
-                        data.docpassdt,
-                        DateTimeFormatter.ofPattern("yyyyMMdd")
-                    )
-                    calendarView.unMarkDate(
-                        DateData(
-                            date.year,
-                            date.monthValue,
-                            date.dayOfMonth
-                        ).setMarkStyle(MarkStyle.BACKGROUND, Color.CYAN)
-                    )
+
+                try {
+
+                    //필기시험 일자
+                    if (data.docexamdt != "XXXXXXXX") {
+                        date = LocalDate.parse(
+                            data.docexamdt,
+                            DateTimeFormatter.ofPattern("yyyyMMdd")
+                        )
+                        calendarView.unMarkDate(
+                            DateData(
+                                date.year,
+                                date.monthValue,
+                                date.dayOfMonth
+                            ).setMarkStyle(MarkStyle.BACKGROUND, Color.MAGENTA)
+                        )
+                        Toast.makeText(requireContext(), "마킹됨", Toast.LENGTH_LONG).show()
+                        Log.d("date", "${date.year} , ${date.monthValue} , ${date.dayOfMonth}")
+                    }
+                    if (data.docpassdt != "XXXXXXXX") {
+                        //필기시험 합격자 발표일
+                        date = LocalDate.parse(
+                            data.docpassdt,
+                            DateTimeFormatter.ofPattern("yyyyMMdd")
+                        )
+                        calendarView.unMarkDate(
+                            DateData(
+                                date.year,
+                                date.monthValue,
+                                date.dayOfMonth
+                            ).setMarkStyle(MarkStyle.BACKGROUND, Color.CYAN)
+                        )
+                    }
+                }catch (e:DateTimeParseException){
+                    e.printStackTrace()
                 }
             }
         }catch (e : NullPointerException){
