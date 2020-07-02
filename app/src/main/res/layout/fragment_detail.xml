@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/background"
     android:isScrollContainer="true"
     android:nestedScrollingEnabled="true"
     tools:context=".ui.detailFragment">
@@ -30,12 +30,12 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#5A5A5A">
+            android:background="#FFFFFF">
 
             <ImageView
                 android:id="@+id/detail_ImageView"
-                android:layout_width="379dp"
-                android:layout_height="wrap_content"
+                android:layout_width="386dp"
+                android:layout_height="118dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
@@ -55,7 +55,7 @@
                 android:autoSizeTextType="none"
                 android:autoText="true"
                 android:text="제목입니다."
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorPrimaryText"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
                 android:autoSizeTextType="none"
                 android:inputType="textMultiLine"
                 android:text="내용입니다."
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorPrimaryText"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,14 +110,14 @@
 
             <EditText
                 android:id="@+id/commentEditText"
-                android:layout_width="312dp"
+                android:layout_width="0dp"
                 android:layout_height="34dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="#CACACA"
                 android:ems="10"
                 android:hint="덧글 쓰기"
                 android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/detail_send_comment"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/detail_content_text" />
 
@@ -140,7 +140,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="작성자가들어옵니다."
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorPrimaryText"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/detail_title_text" />

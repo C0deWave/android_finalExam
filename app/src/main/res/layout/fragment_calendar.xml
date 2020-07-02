@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/background"
     android:visibility="visible"
     tools:context=".MainActivity">
 
@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calendar"
+        android:textColor="#000000"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
@@ -23,11 +24,10 @@
 
     <sun.bob.mcalendarview.MCalendarView
         android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,9 +127,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="D-day를 지정해 주세요."
-        android:textColor="#000000"
-        android:textSize="30sp"
+        android:text="D-day 없음"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />

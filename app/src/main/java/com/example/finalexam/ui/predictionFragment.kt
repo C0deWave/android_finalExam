@@ -40,6 +40,7 @@ class predictionFragment : Fragment() {
 
     //api의 값
     var predictXml : ArrayList<predictXmlData>? = null
+    val percentOfOpenPredict = 0.085f
 
     //---------------------------------------------------------------------------------------
     //onCreateView 입니다.
@@ -155,7 +156,6 @@ class predictionFragment : Fragment() {
     //일정 확률 이상스크래치를 하면 스크래치 뷰가 사라지면서 전체 화면이 나타나게 됩니다.
     //또한 약간이라도 긁으면 손가락 애니메이션이 보이지 않게 만들었습니다.
     fun settingScratchView() {
-        val percentOfReveal = 0.1
 
         scratchView.setRevealListener(object : ScratchView.IRevealListener{
             override fun onRevealed(scratchView: ScratchView?) {
@@ -172,7 +172,7 @@ class predictionFragment : Fragment() {
                 fingerImage.clearAnimation()
                 fingerImage.visibility = View.INVISIBLE
 
-                if (percent > percentOfReveal){
+                if (percent > percentOfOpenPredict){
                     //0.1퍼센트 이상 긁으면 onRevealed 함수를 진행하고 리스너를 해제합니다.
                     this.onRevealed(scratchView)
 

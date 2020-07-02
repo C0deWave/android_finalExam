@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
+        android:background="#C55050"
         android:text="페이스북 연동"
         app:layout_constraintBottom_toTopOf="@+id/googleLoginButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +95,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="37dp"
+        app:boxStrokeColor="#673AB7"
+        app:hintTextColor="#673AB7"
         app:layout_constraintBottom_toTopOf="@+id/Login_loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -101,9 +105,11 @@
             android:id="@+id/Login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="#003DBED4"
             android:hint="Password"
-            android:password="true" />
+            android:password="true"
+            android:textColor="#000000"
+            android:textColorLink="#E91E63" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -113,6 +119,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        app:boxStrokeColor="#673AB7"
+        app:hintTextColor="#673AB7"
         app:layout_constraintBottom_toTopOf="@+id/loginPasswordInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -121,8 +130,10 @@
             android:id="@+id/Login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:hint="Email" />
+            android:background="#0038AECA"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorLink="#E91E63" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

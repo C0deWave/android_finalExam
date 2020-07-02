@@ -3,12 +3,12 @@ package com.example.finalexam
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.finalexam.dataClass.UserInfo
 import com.facebook.login.LoginManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -20,7 +20,8 @@ import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
-import java.io.*
+import java.io.IOException
+import java.io.InputStream
 
 //로그인을 마치고 원하는 자격증과 닉네임을 정하는 부분입니다.
 

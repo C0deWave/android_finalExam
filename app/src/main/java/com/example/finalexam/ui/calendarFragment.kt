@@ -3,11 +3,11 @@ package com.example.finalexam.ui
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -15,10 +15,7 @@ import com.android.volley.toolbox.Volley
 import com.example.finalexam.R
 import com.example.finalexam.dataClass.certificationTestXmlData
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_calendar.*
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
@@ -28,7 +25,6 @@ import sun.bob.mcalendarview.listeners.OnDateClickListener
 import sun.bob.mcalendarview.vo.DateData
 import java.io.ByteArrayInputStream
 import java.io.IOException
-import java.lang.NullPointerException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.DateTimeParseException
@@ -37,10 +33,14 @@ import kotlin.collections.ArrayList
 
 class calendarFragment : Fragment() {
 
+    //리스너 해제하기
+    var listener: ChildEventListener? = null
+
     //api의 값
-    var Xmldata : ArrayList<certificationTestXmlData>? = null
+    var Xmldata: ArrayList<certificationTestXmlData>? = null
+
     //원하는 자격증의 대분류
-    var result : String = ""
+    var result: String = ""
 
     //선택한 날짜
     var year = 0
@@ -52,13 +52,15 @@ class calendarFragment : Fragment() {
     var dDay_Month = 0
     var dDay_Day = 0
 
+    val now = LocalDate.now()
+
     //오늘의 날자
     val calendar = Calendar.getInstance()
 
     //선택한 날짜
     val dCalendar = Calendar.getInstance()
 
-    val dayOfMilliSecond = (24*60*60*1000)
+    val dayOfMilliSecond = (24 * 60 * 60 * 1000)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -94,31 +96,17 @@ class calendarFragment : Fragment() {
             cardView.visibility = View.INVISIBLE
             tv_content.visibility = View.VISIBLE
 
-            calendarView.unMarkDate(DateData( dDay_Year, dDay_Month, dDay_Day )
-                .setMarkStyle(MarkStyle.LEFTSIDEBAR,Color.YELLOW))
-            dCalendar.set(year,month-1,day)
-
-            var t = calendar.timeInMillis
-            var d = dCalendar.timeInMillis
-            //디데이 날짜에서 오늘 날짜를 뺸 값을 일 단위로 바꾼다.
-            var r = (d - t)/(dayOfMilliSecond)
-
-            if (r > 0){
-                tv_content.text = "D-day :  -" + r.toString()
-            }else if (r == 0L){
-                tv_content.text = "D-day :  D-Day!!"
-            }else{
-                tv_content.text = "D-day :  +" + (r * -1).toString()
-            }
-            Log.d("d-day","${r.toString()}")
-
-            calendarView.markDate(DateData( year, month, day )
-                .setMarkStyle(MarkStyle.LEFTSIDEBAR,Color.YELLOW))
-            dCalendar.set(year,month-1,day)
+            calendarView.unMarkDate(
+                DateData(dDay_Year, dDay_Month, dDay_Day)
+                    .setMarkStyle(MarkStyle.LEFTSIDEBAR, Color.YELLOW)
+            )
 
             dDay_Year = year
             dDay_Month = month
             dDay_Day = day
+
+            checkD_Day()
+            tv_content.visibility = View.VISIBLE
         }
 
         btn_save.setOnClickListener {
@@ -160,6 +148,30 @@ class calendarFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         discheckTestDate()
+
+        //파이어베이스 데이터베이스에 저장합니다.
+        FirebaseDatabase.getInstance().reference
+            .child("users")
+            .child("${FirebaseAuth.getInstance().currentUser?.uid}")
+            .child("d_day_year")
+            .setValue(dDay_Year)
+
+        //파이어베이스 데이터베이스에 저장합니다.
+        FirebaseDatabase.getInstance().reference
+            .child("users")
+            .child("${FirebaseAuth.getInstance().currentUser?.uid}")
+            .child("d_day_month")
+            .setValue(dDay_Month)
+
+        //파이어베이스 데이터베이스에 저장합니다.
+        FirebaseDatabase.getInstance().reference
+            .child("users")
+            .child("${FirebaseAuth.getInstance().currentUser?.uid}")
+            .child("d_day_day")
+            .setValue(dDay_Day)
+
+        Log.d("리스너 제거", "리스너 제거")
+        calendarView.unMarkDate(DateData(dDay_Year, dDay_Month, dDay_Day))
     }
 
     fun checkTestDate() {
@@ -167,8 +179,6 @@ class calendarFragment : Fragment() {
         var date: LocalDate? = null
 
         try {
-
-
             for (data in this!!.Xmldata!!) {
                 //필기시험 일자
                 try {
@@ -263,6 +273,7 @@ class calendarFragment : Fragment() {
 
         val user = FirebaseAuth.getInstance().currentUser
         //원하는 자격증을 바인딩합니다.
+        //d-day도 가져옵니다.
         if (user != null) {
             FirebaseDatabase.getInstance().reference
                 .child("users")
@@ -273,16 +284,73 @@ class calendarFragment : Fragment() {
 
                     override fun onDataChange(p0: DataSnapshot) {
                         try {
+
                             var data = p0?.value as Map<String, Any>
+
                             result = data["cert1"].toString()
-                        }catch (e: TypeCastException){
+                            dDay_Year = (data["d_day_year"] as Long).toInt()
+                            dDay_Month = (data["d_day_month"] as Long).toInt()
+                            dDay_Day = (data["d_day_day"] as Long).toInt()
+
+                            Log.d("onDataChange_d-day", "${dDay_Year} ${dDay_Month} ${dDay_Day}")
+
+                            if (dDay_Year == 0) {
+                                //디데이 지정을 하지 않은 경우
+                                //디데이를 설정할 때까지 감추기
+                                tv_content.visibility = View.INVISIBLE
+
+                                //오늘을 디데이로 하기
+                                dDay_Year = now.format(DateTimeFormatter.ofPattern("yyyy")).toInt()
+                                dDay_Month = now.format(DateTimeFormatter.ofPattern("MM")).toInt()
+                                dDay_Day = now.format(DateTimeFormatter.ofPattern("dd")).toInt()
+                            }
+
+                            year = now.format(DateTimeFormatter.ofPattern("yyyy")).toInt()
+                            month = now.format(DateTimeFormatter.ofPattern("MM")).toInt()
+                            day = now.format(DateTimeFormatter.ofPattern("dd")).toInt()
+
+                            checkD_Day()
+
+                        } catch (e: TypeCastException) {
                             e.printStackTrace()
                         }
                         //원하는자격증에 따라 url을 호출합니다.
                         callUrlAndXmlParse(result)
 
                     }
-                }).toString()
+                })
+        }
+    }
+
+    fun checkD_Day() {
+
+
+        dCalendar.set(dDay_Year, dDay_Month - 1, dDay_Day)
+
+        var t = calendar.timeInMillis
+        var d = dCalendar.timeInMillis
+        //디데이 날짜에서 오늘 날짜를 뺸 값을 일 단위로 바꾼다.
+        var r = (d - t) / (dayOfMilliSecond)
+
+
+        calendarView.markDate(
+            DateData(dDay_Year, dDay_Month, dDay_Day)
+                .setMarkStyle(MarkStyle.LEFTSIDEBAR, Color.YELLOW)
+        )
+        try {
+            Log.d("today", "${year} ${month} ${day}")
+            if (r > 0) {
+                tv_content.text = "D-day :  -" + r.toString()
+            } else if (r == 0L) {
+                tv_content.text = "D-day :  D-Day!!"
+            } else {
+                tv_content.text = "D-day :  +" + (r * -1).toString()
+            }
+            Log.d("d-day", "${r.toString()}")
+        } catch (e: IllegalStateException) {
+            e.printStackTrace()
+        } catch (e: java.lang.NullPointerException) {
+            e.printStackTrace()
         }
     }
 
@@ -290,11 +358,23 @@ class calendarFragment : Fragment() {
 
         var url = ""
 
-        when(result){
-            "기사"  -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
-            "기능사" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
-            "기능장" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getMCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
-            "기술사" -> {url = "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getPEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"}
+        when (result) {
+            "기사" -> {
+                url =
+                    "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"
+            }
+            "기능사" -> {
+                url =
+                    "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"
+            }
+            "기능장" -> {
+                url =
+                    "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getMCList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"
+            }
+            "기술사" -> {
+                url =
+                    "http://openapi.q-net.or.kr/api/service/rest/InquiryTestInformationNTQSVC/getPEList?serviceKey=QR6Eti6A0zHnybQlRIidIklUWdIf9bl5bt3coyBro2ldfN%2FsxvuIwJ8O4HNQAhBV%2Fia8yktKc1xmVa29qQaDMA%3D%3D&"
+            }
         }
 
         requestVolley(url)

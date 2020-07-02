@@ -16,8 +16,10 @@ import com.example.finalexam.dataClass.Post
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.database.snapshot.ChildKey
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.card_comment.view.*
 import kotlinx.android.synthetic.main.fragment_detail.*
+import java.lang.IllegalArgumentException
 
 class detailFragment(data: Post?) : Fragment() {
 
@@ -61,6 +63,7 @@ class detailFragment(data: Post?) : Fragment() {
 //            comment.writerId = FirebaseAuth.getInstance().currentUser?.displayName.toString()
             comment.postId = post?.postId.toString()
             comment.commentId = FirebaseAuth.getInstance().currentUser?.displayName.toString()
+
             newRef.setValue(comment)
             Toast.makeText(requireContext(),"저장 성공했습니다.",Toast.LENGTH_LONG).show()
 
@@ -75,7 +78,14 @@ class detailFragment(data: Post?) : Fragment() {
         detail_title_text.text = post?.title
         detail_content_text.text = post?.message
         detail_witter_text.text = post?.writerId
-        detail_ImageView
+        try {
+            Picasso.get()
+                .load(post?.bgUri)
+                .fit()
+                .into(detail_ImageView)
+        }catch (e:IllegalArgumentException){
+            e.printStackTrace()
+        }
 
         val layoutManager = LinearLayoutManager(requireContext())
         comment_rv.layoutManager = layoutManager

@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/background"
     android:fitsSystemWindows="true">
 
     <FrameLayout
@@ -32,8 +32,7 @@
         app:mbn_backgroundBottomColor="@color/colorPrimary"
         app:mbn_countBackgroundColor="#dd6d00"
         app:mbn_defaultIconColor="#FFFFFF"
-        app:mbn_selectedIconColor="@color/colorAccent"
-        />
+        app:mbn_selectedIconColor="@color/colorAccent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

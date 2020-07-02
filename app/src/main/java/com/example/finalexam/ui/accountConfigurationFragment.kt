@@ -7,7 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.finalexam.*
+import com.example.finalexam.ConfigurationActivity
+import com.example.finalexam.MainActivity
+import com.example.finalexam.R
+import com.example.finalexam.loginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

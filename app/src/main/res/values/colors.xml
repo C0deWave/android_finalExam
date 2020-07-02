@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#4A5FD5</color>
+    <color name="colorPrimaryDark">#3C4FC5</color>
     <color name="colorAccent">#FF5252</color>
     <color name="colorWhite">#FFFFFF</color>
 
     <!--자격증 카드뷰의 합, 불합 여부를 보여주는 배경색-->
-    <color name="goodnews">#55DC57</color>
+    <color name="goodnews">#46B547</color>
     <color name="badnews">#E62828</color>
 
+    <color name="background">#EB9AD4E7</color>
     <!--게시판 글 제목 텍스트 색-->
     <color name="colorPrimaryText">#3D3D3D</color>
 
