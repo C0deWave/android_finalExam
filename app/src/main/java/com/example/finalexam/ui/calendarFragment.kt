@@ -14,7 +14,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.finalexam.R
 import com.example.finalexam.dataClass.certificationTestXmlData
-import com.example.finalexam.dataClass.learnData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -29,11 +28,12 @@ import sun.bob.mcalendarview.listeners.OnDateClickListener
 import sun.bob.mcalendarview.vo.DateData
 import java.io.ByteArrayInputStream
 import java.io.IOException
-import java.lang.ClassCastException
 import java.lang.NullPointerException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.DateTimeParseException
+import java.util.*
+import kotlin.collections.ArrayList
 
 class calendarFragment : Fragment() {
 
@@ -42,12 +42,23 @@ class calendarFragment : Fragment() {
     //원하는 자격증의 대분류
     var result : String = ""
 
-    var learnData : learnData? = learnData()
-
-    //오늘의 날짜
+    //선택한 날짜
     var year = 0
     var month = 0
     var day = 0
+
+    //D-day로 지정한 날짜
+    var dDay_Year = 0
+    var dDay_Month = 0
+    var dDay_Day = 0
+
+    //오늘의 날자
+    val calendar = Calendar.getInstance()
+
+    //선택한 날짜
+    val dCalendar = Calendar.getInstance()
+
+    val dayOfMilliSecond = (24*60*60*1000)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -75,9 +86,40 @@ class calendarFragment : Fragment() {
         })
 
         tv_day.visibility = View.INVISIBLE
-        tv_content.visibility = View.INVISIBLE
         cardView.visibility = View.INVISIBLE
 
+
+        //디데이 일정 계산하기
+        btn_d_day.setOnClickListener {
+            cardView.visibility = View.INVISIBLE
+            tv_content.visibility = View.VISIBLE
+
+            calendarView.unMarkDate(DateData( dDay_Year, dDay_Month, dDay_Day )
+                .setMarkStyle(MarkStyle.LEFTSIDEBAR,Color.YELLOW))
+            dCalendar.set(year,month-1,day)
+
+            var t = calendar.timeInMillis
+            var d = dCalendar.timeInMillis
+            //디데이 날짜에서 오늘 날짜를 뺸 값을 일 단위로 바꾼다.
+            var r = (d - t)/(dayOfMilliSecond)
+
+            if (r > 0){
+                tv_content.text = "D-day :  -" + r.toString()
+            }else if (r == 0L){
+                tv_content.text = "D-day :  D-Day!!"
+            }else{
+                tv_content.text = "D-day :  +" + (r * -1).toString()
+            }
+            Log.d("d-day","${r.toString()}")
+
+            calendarView.markDate(DateData( year, month, day )
+                .setMarkStyle(MarkStyle.LEFTSIDEBAR,Color.YELLOW))
+            dCalendar.set(year,month-1,day)
+
+            dDay_Year = year
+            dDay_Month = month
+            dDay_Day = day
+        }
 
         btn_save.setOnClickListener {
             cardView.visibility = View.INVISIBLE
@@ -85,15 +127,12 @@ class calendarFragment : Fragment() {
 
             when(rg.checkedRadioButtonId) {
                 R.id.rbtn_complete -> {
-//                    tv_content.text = "공부완료"
                     calendarView.markDate(DateData(
                         year,
                         month,
                         day
                     ).setMarkStyle(MarkStyle.DOT, Color.RED))
 
-                    //클래스에 데이터 값을 추가합니다.
-//                    learnData?.learnList?.add(com.example.finalexam.dataClass.learnData.date(year, month, day))
                 }
 
                 R.id.rbtn_uncomplete -> {
@@ -102,14 +141,6 @@ class calendarFragment : Fragment() {
                         month,
                         day
                     ).setMarkStyle(MarkStyle.DOT, Color.RED))
-                    //클래스에 데이터 값을 뻅니다.
-//                    learnData?.learnList?.remove(
-//                        com.example.finalexam.dataClass.learnData.date(
-//                            year,
-//                            month,
-//                            day
-//                        )
-//                    )
                 }
             }
         }
@@ -118,46 +149,17 @@ class calendarFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        try {
-//            FirebaseDatabase.getInstance().reference
-//                .child("learnDay")
-//                .child(FirebaseAuth.getInstance().currentUser!!.uid)
-//                .addListenerForSingleValueEvent(object : ValueEventListener {
-//                    override fun onCancelled(p0: DatabaseError) {
-//                    }
-//
-//                    override fun onDataChange(p0: DataSnapshot) {
-//                        var data :Map<String, Any>? = p0?.value as Map<String, learnData>?
-//                        learnData = (data?.get("learnList") ?: learnData()) as learnData?
-//
-//                        Log.d("호출 완료", "${learnData?.learnList}")
-//
-//                        //원하는자격증에 따라 url을 호출합니다.
-//                        callUrlAndXmlParse(result)
-//
-//                    }
-//                })
-//        }catch (e:TypeCastException){
-//            e.printStackTrace()
-//        }catch (e : ClassCastException){
-//            e.printStackTrace()
-//        }
         //원하는 자격증이 뭔지 확인하는 함수입니다.
         whatWantCertificat()
+
+        //원하는자격증에 따라 url을 호출합니다.
+        callUrlAndXmlParse(result)
 
     }
 
     override fun onPause() {
         super.onPause()
         discheckTestDate()
-//
-//        //파이어베이스 데이터 베이스에 값을 저장합니다.
-//        FirebaseDatabase.getInstance().reference
-//            .child("learnDay")
-//            .child(FirebaseAuth.getInstance().currentUser!!.uid)
-//            .setValue(learnData?.learnList)
-
-        Log.d("date","${learnData?.learnList}")
     }
 
     fun checkTestDate() {

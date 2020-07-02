@@ -1,12 +1,10 @@
 package com.example.finalexam.ui
 
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,12 +19,10 @@ import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_board_list_item.view.*
 import kotlinx.android.synthetic.main.fragment_notice_board.*
-import kotlinx.coroutines.delay
 import org.joda.time.DateTime
 import org.joda.time.Days
 import org.joda.time.Hours
 import org.joda.time.Minutes
-import java.lang.IllegalStateException
 import java.text.SimpleDateFormat
 import java.util.*
 
