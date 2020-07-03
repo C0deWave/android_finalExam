@@ -340,9 +340,9 @@ class calendarFragment : Fragment() {
         try {
             Log.d("today", "${year} ${month} ${day}")
             if (r > 0) {
-                tv_content.text = "D-day :  -" + r.toString()
+                tv_content.text = "D - day 까지  " + r.toString() + "일"
             } else if (r == 0L) {
-                tv_content.text = "D-day :  D-Day!!"
+                tv_content.text = "D-Day!!"
             } else {
                 tv_content.text = "D-day :  +" + (r * -1).toString()
             }
