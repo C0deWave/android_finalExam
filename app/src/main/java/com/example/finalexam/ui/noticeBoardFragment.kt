@@ -171,7 +171,6 @@ class noticeBoardFragment : Fragment() {
         val timeTextView = itemView.timeTextView
         val commentCountText = itemView.commentCountText
         val image = itemView.imageView3
-
     }
 
     inner class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {

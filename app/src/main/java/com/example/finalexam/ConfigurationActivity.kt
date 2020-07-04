@@ -177,7 +177,7 @@ class ConfigurationActivity : AppCompatActivity() {
 
             val profileUpdate = UserProfileChangeRequest.Builder()
                 .setDisplayName("${nickNameText.text}")
-                .setPhotoUri(Uri.parse("https://i.ytimg.com/vi/g9k1vprdNEo/maxresdefault.jpg"))
+                .setPhotoUri(Uri.parse("https://firebasestorage.googleapis.com/v0/b/finalexam-77fdc.appspot.com/o/user.png?alt=media&token=8696e110-d8f1-4218-8cb9-e28088f60c1f"))
                 .build()
 
             user?.updateProfile(profileUpdate)
@@ -195,7 +195,7 @@ class ConfigurationActivity : AppCompatActivity() {
         }else{
             val profileUpdate = UserProfileChangeRequest.Builder()
                 .setDisplayName("${nickNameText.text}")
-                .setPhotoUri(Uri.parse("https://i.ytimg.com/vi/g9k1vprdNEo/maxresdefault.jpg"))
+                .setPhotoUri(Uri.parse("https://firebasestorage.googleapis.com/v0/b/finalexam-77fdc.appspot.com/o/user.png?alt=media&token=8696e110-d8f1-4218-8cb9-e28088f60c1f"))
                 .build()
 
             user?.updateProfile(profileUpdate)
