@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalExam</string>
+    <string name="app_name">자격증의 민족</string>
     <!-- 페이스북 인증을 위한 값-->
     <string name="facebook_app_id">342022256766125</string>
     <string name="fb_login_protocol_scheme">fb342022256766125</string>

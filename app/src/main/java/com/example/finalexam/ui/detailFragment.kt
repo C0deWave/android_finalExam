@@ -15,7 +15,6 @@ import com.example.finalexam.dataClass.Comment
 import com.example.finalexam.dataClass.Post
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.database.snapshot.ChildKey
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.card_comment.view.*
 import kotlinx.android.synthetic.main.fragment_detail.*
@@ -29,10 +28,6 @@ class detailFragment(data: Post?) : Fragment() {
 
     var post = data
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,11 +36,9 @@ class detailFragment(data: Post?) : Fragment() {
         return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
+    //암시적 인텐트 이용
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
 
         backButton.setOnClickListener {
             (activity as MainActivity).setFragment(noticeBoardFragment.newInstance())
@@ -157,6 +150,7 @@ class detailFragment(data: Post?) : Fragment() {
 
     }
 
+    //화면을 벗어날 때 리스너를 제거합니다.
     override fun onPause() {
         super.onPause()
         commentlistener?.let { it1 ->
@@ -168,6 +162,7 @@ class detailFragment(data: Post?) : Fragment() {
 
     }
 
+    //댓글의 어댑터패턴 입니다.
     inner class MyViewHolder(itemView : View):RecyclerView.ViewHolder(itemView){
         val witter = itemView.comment_NickName_text
         val content = itemView.comment_content_text

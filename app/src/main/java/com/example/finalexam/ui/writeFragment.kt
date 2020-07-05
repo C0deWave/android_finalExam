@@ -97,7 +97,7 @@ class writeFragment : Fragment() {
 
 
             if(urlTask == null) {
-                Log.d("게시글 업로드", "게시글 업로")
+                Log.d("게시글 업로드", "게시글 업로드")
                 newRef.setValue(post)
                 Toast.makeText(requireContext(), "이미지 없이 저장 성공!!!", Toast.LENGTH_LONG).show()
 

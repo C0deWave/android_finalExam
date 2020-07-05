@@ -41,6 +41,7 @@ class noticeBoardFragment : Fragment() {
         return view
     }
 
+    //프레그먼트 전환시 리스너를 해제합니다.
     override fun onPause() {
         super.onPause()
         listener?.let { it1 ->
@@ -163,7 +164,7 @@ class noticeBoardFragment : Fragment() {
         }
     }
 
-
+//게시글의 어댑터 입니다.
     inner class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val writterId = itemView.witterName_text
         val title = itemView.title
@@ -219,6 +220,7 @@ class noticeBoardFragment : Fragment() {
             }
         }
 
+        //게시글이 언제 나왔는지 알려주는 함수
         fun getDiffTimeText(targetTime: Long): String {
             val curDateTime = DateTime()
             val targetDateTime = DateTime().withMillis(targetTime)
